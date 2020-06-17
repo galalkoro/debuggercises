@@ -12,8 +12,8 @@
 let desert = 'chocolate ' + 'cake';
 console.log(desert); // should log 'chocolate cake'
 
-let topping = desert + 'frosting';
+let topping = desert + ' with frosting';
 console.log(topping); // should log 'chocolate cake with frosting'
 
-let fruit = topping + ' banana';
+let fruit = topping + ' and banana';
 console.log(fruit); // should log 'chocolate cake with frosting and banana'
