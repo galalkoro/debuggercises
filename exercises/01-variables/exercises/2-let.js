@@ -5,15 +5,15 @@
 // and don't just write the correct answer directly!
 //  practice re-using values stored in variables to get the correct value
 
-let fruit = 'banana';
-let desert = 'cake';
-let topping = 'frosting';
+//let fruit = 'banana';
+//let desert = 'cake';
+//let topping = 'frosting';
 
-_;
+let desert = 'chocolate ' + 'cake';
 console.log(desert); // should log 'chocolate cake'
 
-_;
-console.log(desert); // should log 'chocolate cake with frosting'
+let topping = desert + 'frosting';
+console.log(topping); // should log 'chocolate cake with frosting'
 
-_;
-console.log(desert); // should log 'chocolate cake with frosting and banana'
+let fruit = topping + ' banana';
+console.log(fruit); // should log 'chocolate cake with frosting and banana'
