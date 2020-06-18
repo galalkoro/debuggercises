@@ -2,12 +2,12 @@
 
 ## /exercises/03-comparing-and-asserting/exercises 
 
-> 6/18/2020, 1:05:19 PM 
+> 6/18/2020, 1:24:39 PM 
 
 [../README.md](../README.md)
 
 - [/1.js](#1js) - _pass_ 
-- [/2.js](#2js) - _incomplete_ 
+- [/2.js](#2js) - _pass_ 
 
 ---
 
@@ -57,22 +57,18 @@ console.assert(isTrue4, 'Assertion 4');
 
 ## /2.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/03-comparing-and-asserting/exercises/2.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/03-comparing-and-asserting/exercises/2.js:6:33)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:113:1) 
++ PASS: Assertion 1
++ PASS: Assertion 2
++ PASS: Assertion 3
++ PASS: Assertion 4
++ PASS: Assertion 5
++ PASS: Assertion 6
++ PASS: Assertion 7
 ```
 
 ```js
@@ -81,33 +77,32 @@ UNCAUGHT: ReferenceError: _ is not defined
 // replace the _ to pass the asserts
 
 const comparison1 = 4 === '4';
-const isTrue1 = comparison1 === _;
+const isTrue1 = comparison1 === false;
 console.assert(isTrue1, 'Assertion 1');
 
 const comparison2 = Infinity === 'Infinity';
-const isTrue2 = comparison2 === _;
+const isTrue2 = comparison2 === false;
 console.assert(isTrue2, 'Assertion 2');
 
-const comparison3 = "x" === `x`;
-const isTrue3 = comparison3 === _;
+const comparison3 = 'x' === `x`;
+const isTrue3 = comparison3 === true;
 console.assert(isTrue3, 'Assertion 3');
 
-const comparison4 = 'null' === _;
+const comparison4 = 'null' === 'null';
 const isTrue4 = comparison4 === true;
 console.assert(isTrue4, 'Assertion 4');
 
 const comparison5 = 'null' === null;
-const isTrue5 = comparison5 === _;
+const isTrue5 = comparison5 === false;
 console.assert(isTrue5, 'Assertion 5');
 
 const comparison6 = 0.0 === 0;
-const isTrue6 = comparison6 === _;
+const isTrue6 = comparison6 === true;
 console.assert(isTrue6, 'Assertion 6');
 
 const comparison7 = null === undefined;
-const isTrue7 = comparison7 === _;
+const isTrue7 = comparison7 === false;
 console.assert(isTrue7, 'Assertion 7');
-
 
 ```
 
