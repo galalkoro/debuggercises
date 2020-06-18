@@ -2,13 +2,12 @@
 
 ## /exercises/01-variables/exercises 
 
-> 6/18/2020, 12:00:24 PM 
+> 6/18/2020, 1:05:19 PM 
 
 [../README.md](../README.md)
 
 - [/1-let.js](#1-letjs)  
 - [/2-let.js](#2-letjs)  
-- [/2-let1.js](#2-let1js)  
 - [/3-let-or-const.js](#3-let-or-constjs)  
 - [/4-let-or-const.js](#4-let-or-constjs)  
 - [/5-let-or-const.js](#5-let-or-constjs)  
@@ -65,45 +64,6 @@ console.log(firstFiveLetters); // should log "abcde"
 >  
 >
 > [review source](../../../exercises/01-variables/exercises/2-let.js)
-
-```txt
-LOG: chocolate cake
-LOG: chocolate cake with frosting
-LOG: chocolate cake with frosting and banana
-```
-
-```js
-'use strict';
-
-// practice using variables declared with let
-//  fill in the blanks to log the commented values
-// and don't just write the correct answer directly!
-//  practice re-using values stored in variables to get the correct value
-
-//let fruit = 'banana';
-//let desert = 'cake';
-//let topping = 'frosting';
-
-let desert = 'chocolate ' + 'cake';
-console.log(desert); // should log 'chocolate cake'
-
-let topping = desert + ' with frosting';
-console.log(topping); // should log 'chocolate cake with frosting'
-
-let fruit = topping + ' and banana';
-console.log(fruit); // should log 'chocolate cake with frosting and banana'
-
-```
-
-[TOP](#debuggercises)
-
----
-
-## /2-let1.js 
-
->  
->
-> [review source](../../../exercises/01-variables/exercises/2-let1.js)
 
 ```txt
 LOG: chocolate cake

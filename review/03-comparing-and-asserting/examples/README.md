@@ -2,12 +2,12 @@
 
 ## /exercises/03-comparing-and-asserting/examples 
 
-> 6/18/2020, 12:00:24 PM 
+> 6/18/2020, 1:05:19 PM 
 
 [../README.md](../README.md)
 
 - [/1-strict-equality.js](#1-strict-equalityjs)  
-- [/2-extra-assignment-vs-comparison.js](#2-extra-assignment-vs-comparisonjs) - _error_ 
+- [/2-extra-assignment-vs-comparison.js](#2-extra-assignment-vs-comparisonjs)  
 - [/3-console-assert.js](#3-console-assertjs) - _fail_ 
 - [/4-testing-with-assert.js](#4-testing-with-assertjs) - _incomplete_ 
 - [/extra-object-is.js](#extra-object-isjs)  
@@ -85,26 +85,16 @@ console.log(typeof huh, huh);
 
 ## /2-extra-assignment-vs-comparison.js 
 
-> error 
+>  
 >
 > [review source](../../../exercises/03-comparing-and-asserting/examples/2-extra-assignment-vs-comparison.js)
 
 ```txt
-UNCAUGHT:   ...  /exercises/03-comparing-and-asserting/examples/2-extra-assignment-vs-comparison.js:29
-'value 2' = variable; // uncomment this line for an error
-^^^^^^^^^
-
-ReferenceError: Invalid left-hand side in assignment
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:113:1)
-    at Module._compile (internal/modules/cjs/loader.js:778:30) 
+LOG: string  value 1
+LOG: string  value 1
+LOG: boolean  false
+LOG: boolean  true
+LOG: boolean  true
 ```
 
 ```js
@@ -136,9 +126,7 @@ console.log(typeof thirdComparison, thirdComparison);
 
 // = assignments cannot be written either way
 //  Invalid left-hand side in assignment
-'value 2' = variable; // uncomment this line for an error
-
-
+//'value 2' = variable; // uncomment this line for an error
 
 ```
 

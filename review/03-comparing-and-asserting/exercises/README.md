@@ -2,33 +2,30 @@
 
 ## /exercises/03-comparing-and-asserting/exercises 
 
-> 6/18/2020, 12:00:24 PM 
+> 6/18/2020, 1:05:19 PM 
 
 [../README.md](../README.md)
 
-- [/1.js](#1js) - _incomplete_ 
+- [/1.js](#1js) - _pass_ 
 - [/2.js](#2js) - _incomplete_ 
 
 ---
 
 ## /1.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/03-comparing-and-asserting/exercises/1.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/03-comparing-and-asserting/exercises/1.js:5:26)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:113:1) 
+LOG: boolean  true
++ PASS: Assertion 1
+LOG: boolean  true
++ PASS: Assertion 2
+LOG: boolean  true
++ PASS: Assertion 3
+LOG: boolean  true
++ PASS: Assertion 4
 ```
 
 ```js
@@ -36,19 +33,19 @@ UNCAUGHT: ReferenceError: _ is not defined
 
 // replace the _'s to pass the isTrues
 
-const isTrue1 = true === _;
+const isTrue1 = true === true;
 console.log(typeof isTrue1, isTrue1);
 console.assert(isTrue1, 'Assertion 1');
 
-const isTrue2 = 0.0 === _;
+const isTrue2 = 0.0 === 0;
 console.log(typeof isTrue2, isTrue2);
 console.assert(isTrue2, 'Assertion 2');
 
-const isTrue3 = false === _;
+const isTrue3 = false === false;
 console.log(typeof isTrue3, isTrue3);
 console.assert(isTrue3, 'Assertion 3');
 
-const isTrue4 = 'null' === _;
+const isTrue4 = 'null' === 'null';
 console.log(typeof isTrue4, isTrue4);
 console.assert(isTrue4, 'Assertion 4');
 

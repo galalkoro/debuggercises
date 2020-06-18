@@ -29,9 +29,6 @@
               "path": "/2-let.js"
             },
             {
-              "path": "/2-let1.js"
-            },
-            {
               "path": "/3-let-or-const.js"
             },
             {
@@ -506,5 +503,5 @@
     "debugger": true,
     "jsTutor": true
   },
-  "lastBuild": "2020-06-18T10:00:24.185Z"
+  "lastBuild": "2020-06-18T11:05:19.018Z"
 }
