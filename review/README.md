@@ -2,7 +2,7 @@
 
 ## /exercises 
 
-> 6/15/2020, 11:28:47 AM 
+> 6/18/2020, 11:56:31 AM 
 
 [../README.md](../README.md)
 
@@ -12,11 +12,12 @@
     - [/2-reusing-variables.js](./01-variables/examples/README.md#2-reusing-variablesjs)  
     - [/3-const-vs-let.js](./01-variables/examples/README.md#3-const-vs-letjs) - _error_ 
   - [/exercises](./01-variables/exercises/README.md)
-    - [/1-let.js](./01-variables/exercises/README.md#1-letjs) - _incomplete_ 
-    - [/2-let.js](./01-variables/exercises/README.md#2-letjs) - _incomplete_ 
-    - [/3-let-or-const.js](./01-variables/exercises/README.md#3-let-or-constjs) - _incomplete_ 
-    - [/4-let-or-const.js](./01-variables/exercises/README.md#4-let-or-constjs) - _incomplete_ 
-    - [/5-let-or-const.js](./01-variables/exercises/README.md#5-let-or-constjs) - _incomplete_ 
+    - [/1-let.js](./01-variables/exercises/README.md#1-letjs)  
+    - [/2-let.js](./01-variables/exercises/README.md#2-letjs)  
+    - [/2-let1.js](./01-variables/exercises/README.md#2-let1js)  
+    - [/3-let-or-const.js](./01-variables/exercises/README.md#3-let-or-constjs)  
+    - [/4-let-or-const.js](./01-variables/exercises/README.md#4-let-or-constjs)  
+    - [/5-let-or-const.js](./01-variables/exercises/README.md#5-let-or-constjs)  
 - [/02-primitive-types](./02-primitive-types/README.md)
   - [/examples](./02-primitive-types/examples/README.md)
     - [/boolean-undefined-null.js](./02-primitive-types/examples/README.md#boolean-undefined-nulljs)  
@@ -24,11 +25,11 @@
     - [/string.js](./02-primitive-types/examples/README.md#stringjs)  
     - [/typeof.js](./02-primitive-types/examples/README.md#typeofjs)  
   - [/exercises](./02-primitive-types/exercises/README.md)
-    - [/fill-in-the-type.js](./02-primitive-types/exercises/README.md#fill-in-the-typejs) - _incomplete_ 
+    - [/fill-in-the-type.js](./02-primitive-types/exercises/README.md#fill-in-the-typejs)  
 - [/03-comparing-and-asserting](./03-comparing-and-asserting/README.md)
   - [/examples](./03-comparing-and-asserting/examples/README.md)
     - [/1-strict-equality.js](./03-comparing-and-asserting/examples/README.md#1-strict-equalityjs)  
-    - [/2-extra-assignment-vs-comparison.js](./03-comparing-and-asserting/examples/README.md#2-extra-assignment-vs-comparisonjs) - _error (syntax)_ 
+    - [/2-extra-assignment-vs-comparison.js](./03-comparing-and-asserting/examples/README.md#2-extra-assignment-vs-comparisonjs) - _error_ 
     - [/3-console-assert.js](./03-comparing-and-asserting/examples/README.md#3-console-assertjs) - _fail_ 
     - [/4-testing-with-assert.js](./03-comparing-and-asserting/examples/README.md#4-testing-with-assertjs) - _incomplete_ 
     - [/extra-object-is.js](./03-comparing-and-asserting/examples/README.md#extra-object-isjs)  

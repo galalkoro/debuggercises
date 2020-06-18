@@ -2,12 +2,12 @@
 
 ## /exercises/03-comparing-and-asserting/examples 
 
-> 6/15/2020, 11:28:47 AM 
+> 6/18/2020, 11:56:31 AM 
 
 [../README.md](../README.md)
 
 - [/1-strict-equality.js](#1-strict-equalityjs)  
-- [/2-extra-assignment-vs-comparison.js](#2-extra-assignment-vs-comparisonjs) - _error (syntax)_ 
+- [/2-extra-assignment-vs-comparison.js](#2-extra-assignment-vs-comparisonjs) - _error_ 
 - [/3-console-assert.js](#3-console-assertjs) - _fail_ 
 - [/4-testing-with-assert.js](#4-testing-with-assertjs) - _incomplete_ 
 - [/extra-object-is.js](#extra-object-isjs)  
@@ -85,7 +85,7 @@ console.log(typeof huh, huh);
 
 ## /2-extra-assignment-vs-comparison.js 
 
-> error (syntax) 
+> error 
 >
 > [review source](../../../exercises/03-comparing-and-asserting/examples/2-extra-assignment-vs-comparison.js)
 
@@ -94,17 +94,17 @@ UNCAUGHT:   ...  /exercises/03-comparing-and-asserting/examples/2-extra-assignme
 'value 2' = variable; // uncomment this line for an error
 ^^^^^^^^^
 
-SyntaxError: Invalid left-hand side in assignment
-    at wrapSafe (internal/modules/cjs/loader.js:1116:16)
-    at Module._compile (internal/modules/cjs/loader.js:1164:27)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
+ReferenceError: Invalid left-hand side in assignment
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:100:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+    at Object.<anonymous> (  ...  /scripts/review.js:113:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30) 
 ```
 
 ```js
@@ -200,15 +200,15 @@ LOG: -- examples --
 LOG: -- practice exercises --
 UNCAUGHT: ReferenceError: _ is not defined
     at Object.<anonymous> (  ...  /exercises/03-comparing-and-asserting/examples/4-testing-with-assert.js:28:33)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:100:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+    at Object.<anonymous> (  ...  /scripts/review.js:113:1) 
 ```
 
 ```js
