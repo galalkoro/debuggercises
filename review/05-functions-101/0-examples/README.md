@@ -2,7 +2,7 @@
 
 ## /exercises/05-functions-101/0-examples 
 
-> 6/18/2020, 1:05:19 PM 
+> 6/19/2020, 12:00:58 AM 
 
 [../README.md](../README.md)
 
@@ -177,9 +177,9 @@ console.assert(isTrue5, 'Assertion 5');
 
 // 0: Creation Phase, function is declared
 function flipper(param1, param2) {
-  // 2 and 9: a return value is generated
-  return param2 + param1;
-  // 3 and 10: global result variable is declared & assigned
+	// 2 and 9: a return value is generated
+	return param2 + param1;
+	// 3 and 10: global result variable is declared & assigned
 }
 
 // 1: flipper is executed, creating a new frame
@@ -203,8 +203,6 @@ const result2 = flipper(arg1, arg2);
 const isTrue2 = result2 === 'yx';
 // 12: the second assertion is evaluated
 console.assert(isTrue2, 'Assertion 2');
-
-
 
 ```
 
