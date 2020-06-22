@@ -2,6 +2,7 @@
 
 > 6/21/2020, 9:05:10 AM 
 
+<<<<<<< HEAD
 ## [exercises](../../README.md)/[01-variables](../README.md)/exercises 
 
 - [/1-let.js](#1-letjs) - _incomplete_ 
@@ -9,15 +10,28 @@
 - [/3-let-or-const.js](#3-let-or-constjs) - _incomplete_ 
 - [/4-let-or-const.js](#4-let-or-constjs) - _incomplete_ 
 - [/5-let-or-const.js](#5-let-or-constjs) - _incomplete_ 
+=======
+> 6/19/2020, 12:00:58 AM 
+
+[../README.md](../README.md)
+
+- [/1-let.js](#1-letjs)  
+- [/2-let.js](#2-letjs)  
+- [/3-let-or-const.js](#3-let-or-constjs)  
+- [/4-let-or-const.js](#4-let-or-constjs)  
+- [/5-let-or-const.js](#5-let-or-constjs)  
+
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 ---
 
 ## /1-let.js 
 
-> incomplete 
+>  
 >
 > [review source](../../../exercises/01-variables/exercises/1-let.js)
 
 ```txt
+<<<<<<< HEAD
 UNCAUGHT: ReferenceError: _ is not defined
     at Object.<anonymous> (  ...  /exercises/01-variables/exercises/1-let.js:8:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
@@ -29,6 +43,13 @@ UNCAUGHT: ReferenceError: _ is not defined
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+LOG: c
+LOG: bc
+LOG: bcd
+LOG: abcd
+LOG: abcde
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 ```
 
 ```js
@@ -39,19 +60,21 @@ UNCAUGHT: ReferenceError: _ is not defined
 // and don't just write the correct answer directly!
 //  you should use firstFiveLetters to fill in one blank for each step
 
-_;
+let firstFiveLetters;
+
+firstFiveLetters = 'c';
 console.log(firstFiveLetters); // should log "c"
 
-firstFiveLetters = _ + _;
+firstFiveLetters = 'b' + 'c';
 console.log(firstFiveLetters); // should log "bc"
 
-firstFiveLetters = _ + _;
+firstFiveLetters = 'bc' + 'd';
 console.log(firstFiveLetters); // should log "bcd"
 
-firstFiveLetters = _ + _;
+firstFiveLetters = 'ab' + 'cd';
 console.log(firstFiveLetters); // should log "abcd"
 
-firstFiveLetters = _ + _;
+firstFiveLetters = 'abc' + 'de';
 console.log(firstFiveLetters); // should log "abcde"
 
 ```
@@ -62,11 +85,12 @@ console.log(firstFiveLetters); // should log "abcde"
 
 ## /2-let.js 
 
-> incomplete 
+>  
 >
 > [review source](../../../exercises/01-variables/exercises/2-let.js)
 
 ```txt
+<<<<<<< HEAD
 UNCAUGHT: ReferenceError: _ is not defined
     at Object.<anonymous> (  ...  /exercises/01-variables/exercises/2-let.js:12:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
@@ -78,11 +102,14 @@ UNCAUGHT: ReferenceError: _ is not defined
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+LOG: chocolate cake
+LOG: chocolate cake with frosting
+LOG: chocolate cake with frosting and banana
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 ```
 
 ```js
-'use strict';
-
 // practice using variables declared with let
 //  fill in the blanks to log the commented values
 // and don't just write the correct answer directly!
@@ -92,13 +119,13 @@ let fruit = 'banana';
 let desert = 'cake';
 let topping = 'frosting';
 
-_;
+desert = `chocolate ${desert}`;
 console.log(desert); // should log 'chocolate cake'
 
-_;
+desert = `${desert} with ${topping}`;
 console.log(desert); // should log 'chocolate cake with frosting'
 
-_;
+desert = `${desert} and ${fruit}`;
 console.log(desert); // should log 'chocolate cake with frosting and banana'
 
 ```
@@ -109,11 +136,12 @@ console.log(desert); // should log 'chocolate cake with frosting and banana'
 
 ## /3-let-or-const.js 
 
-> incomplete 
+>  
 >
 > [review source](../../../exercises/01-variables/exercises/3-let-or-const.js)
 
 ```txt
+<<<<<<< HEAD
 UNCAUGHT: ReferenceError: _ is not defined
     at Object.<anonymous> (  ...  /exercises/01-variables/exercises/3-let-or-const.js:19:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
@@ -125,6 +153,16 @@ UNCAUGHT: ReferenceError: _ is not defined
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+LOG: undefined
+LOG: birch
+LOG: myrtle
+LOG: aspen
+LOG: blue
+LOG: myrtle
+LOG: oak
+LOG: orange
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 ```
 
 ```js
@@ -146,34 +184,34 @@ UNCAUGHT: ReferenceError: _ is not defined
 */
 
 // declare a variable named aTree, don't assign a value!
-_;
+let aTree;
 console.log(aTree);
 
 // assign the value "birch" to the variable aTree
-_;
+aTree = 'birch';
 console.log(aTree);
 
 // declare a variable named turtle and assign it the name "myrtle"
-_;
+const turtle = 'myrtle';
 console.log(turtle);
 
 // reassign aTree to "aspen"
-_;
-console.log(aTree)
+aTree = 'aspen';
+console.log(aTree);
 
 // declare a variable named aColor with the value "blue"
-_;
+let aColor = 'blue';
 console.log(aColor);
 
 // log the value of turtle
-_;
+console.log(turtle);
 
 // reassign aTree to "oak"
-_;
+aTree = 'oak';
 console.log(aTree);
 
 // reassign aColor to "orange"
-_;
+aColor = 'orange';
 console.log(aColor);
 
 ```
@@ -184,11 +222,12 @@ console.log(aColor);
 
 ## /4-let-or-const.js 
 
-> incomplete 
+>  
 >
 > [review source](../../../exercises/01-variables/exercises/4-let-or-const.js)
 
 ```txt
+<<<<<<< HEAD
 UNCAUGHT: ReferenceError: _ is not defined
     at Object.<anonymous> (  ...  /exercises/01-variables/exercises/4-let-or-const.js:19:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
@@ -200,6 +239,16 @@ UNCAUGHT: ReferenceError: _ is not defined
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+LOG: a
+LOG: b
+LOG: a
+LOG: undefined
+LOG: b
+LOG: c
+LOG: bd
+LOG: a
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 ```
 
 ```js
@@ -220,24 +269,23 @@ UNCAUGHT: ReferenceError: _ is not defined
 
 */
 
-
-_;
+const x = 'a';
 console.log(x); // should print 'a'
 
-_;
+let y = 'b';
 console.log(y); // should print 'b'
 
 console.log(x); // should print 'a'
 
-_;
+let z;
 console.log(z); // should print undefined
 
 console.log(y); // should print 'b'
 
-_;
+z = 'c';
 console.log(z); // should print 'c'
 
-_;
+y += 'd';
 console.log(y); // should print 'bd'
 
 console.log(x); // should print 'a'
@@ -250,11 +298,12 @@ console.log(x); // should print 'a'
 
 ## /5-let-or-const.js 
 
-> incomplete 
+>  
 >
 > [review source](../../../exercises/01-variables/exercises/5-let-or-const.js)
 
 ```txt
+<<<<<<< HEAD
 UNCAUGHT: ReferenceError: _ is not defined
     at Object.<anonymous> (  ...  /exercises/01-variables/exercises/5-let-or-const.js:18:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
@@ -266,6 +315,16 @@ UNCAUGHT: ReferenceError: _ is not defined
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+LOG: chair
+LOG: house
+LOG: table
+LOG: undefined
+LOG: apple
+LOG: house
+LOG: table
+LOG: apple, pear
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 ```
 
 ```js
@@ -286,27 +345,27 @@ UNCAUGHT: ReferenceError: _ is not defined
 
 */
 
-_;
+let furniture = 'chair';
 console.log(furniture); // should log 'chair'
 
-_;
+const building = 'house';
 console.log(building); // should log 'house'
 
 furniture = 'table';
-console.log(_); // should log 'table'
+console.log(furniture); // should log 'table'
 
-_;
+let food;
 console.log(food); // should log undefined
 
-_;
+food = 'apple';
 console.log(food); // should log 'apple'
 
-console.log(_); // should log 'house'
+console.log(building); // should log 'house'
 
-console.log(_); // should log 'table'
+console.log(furniture); // should log 'table'
 
-_;
-console.log(_); // should log 'apple, pear'
+food += ', pear';
+console.log(food); // should log 'apple, pear'
 
 ```
 

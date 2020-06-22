@@ -2,7 +2,13 @@
 
 > 6/21/2020, 9:05:10 AM 
 
+<<<<<<< HEAD
 ## [exercises](../../README.md)/[06-explicit-coercion](../README.md)/examples 
+=======
+> 6/19/2020, 12:00:58 AM 
+
+[../README.md](../README.md)
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 - [/1-string.js](#1-stringjs)  
 - [/2-boolean.js](#2-booleanjs)  

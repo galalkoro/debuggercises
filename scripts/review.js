@@ -30,7 +30,6 @@ console.log('\n--- generating empty reports ---\n');
 // add empty report objects to the virtual directory, one for each folder and file
 reportify.addEmptyReports(index);
 
-
 console.log('\n--- generating report map ---\n');
 
 // create another object that contains a shortcut to each empty report
@@ -50,81 +49,113 @@ Object.assign(console, consoleCatcherFactory(PARENT_DIR, reportMap));
 
 // to catch & report any asynchronous errors that are not from promises
 //  (all synchronous errors are caught at evaluation)
-process.on('uncaughtException', err => {
-  reportThrown(err, '', true);
+process.on('uncaughtException', (err) => {
+	reportThrown(err, '', true);
 });
 
 // to catch & report unhandled promise rejections
-process.on('unhandledRejection', err => {
-  reportThrown(err, '', true, true);
+process.on('unhandledRejection', (err) => {
+	reportThrown(err, '', true, true);
 });
 
 // do these things after all exercises have been evaluated and the event loop is cleared
 process.on('exit', (exitCode) => {
-  try {
-    // go through all of the information captured during evaluation and summarize it
-    //  ie. look through each assertion/error and decide if a particular file is passed, failed or errored
-    nativeConsole.log('\n--- interpreting reports ---\n');
-    reportify.summarizeReports(index);
+	try {
+		// go through all of the information captured during evaluation and summarize it
+		//  ie. look through each assertion/error and decide if a particular file is passed, failed or errored
+		nativeConsole.log('\n--- interpreting reports ---\n');
+		reportify.summarizeReports(index);
 
-    // render markdown for each file/folder based on the summaries created above
-    nativeConsole.log('\n--- generating reviews\'s ---\n');
-    reviewify.generateReviews(index);
+		// render markdown for each file/folder based on the summaries created above
+		nativeConsole.log("\n--- generating reviews's ---\n");
+		reviewify.generateReviews(index);
 
-    // append any asynchronous exceptions that didn't have a callstack as an extra section in the main README
-    index.review += reviewify.renderUnsorted(index.unsortedLogs);
+		// append any asynchronous exceptions that didn't have a callstack as an extra section in the main README
+		index.review += reviewify.renderUnsorted(index.unsortedLogs);
 
-    nativeConsole.log('\n--- writing reviews\'s ---\n');
+		nativeConsole.log("\n--- writing reviews's ---\n");
 
-    // write the new markdown files!
-    index.reviewPath = index.reviewPath;
+		// write the new markdown files!
+		index.reviewPath = index.reviewPath;
 
-    const deleteFolderRecursive = function (pathToDelete) {
-      if (fs.existsSync(pathToDelete)) {
-        const files = fs.readdirSync(pathToDelete);
-        files.forEach((file) => {
-          const curPath = path.normalize(path.join(pathToDelete, file));
-          if (fs.lstatSync(curPath).isDirectory()) {
-            deleteFolderRecursive(curPath);
-          } else {
-            fs.unlinkSync(curPath);
-          }
-        });
-        fs.rmdirSync(pathToDelete);
-      }
-    };
-    const absReviewPath = path.normalize(path.join(PARENT_DIR, index.config.reviewPath));
-    deleteFolderRecursive(absReviewPath);
+		const deleteFolderRecursive = function(pathToDelete) {
+			if (fs.existsSync(pathToDelete)) {
+				const files = fs.readdirSync(pathToDelete);
+				files.forEach((file) => {
+					const curPath = path.normalize(path.join(pathToDelete, file));
+					if (fs.lstatSync(curPath).isDirectory()) {
+						deleteFolderRecursive(curPath);
+					} else {
+						fs.unlinkSync(curPath);
+					}
+				});
+				fs.rmdirSync(pathToDelete);
+			}
+		};
+		const absReviewPath = path.normalize(path.join(PARENT_DIR, index.config.reviewPath));
+		deleteFolderRecursive(absReviewPath);
 
-    // console.log(JSON.stringify(index, null, '  '))
+		// console.log(JSON.stringify(index, null, '  '))
 
-    reviewify.writeReviews(index, absReviewPath);
+		reviewify.writeReviews(index, absReviewPath);
 
-    // done!
-    nativeConsole.log(`exiting with code: ${exitCode}`);
+		// done!
+		nativeConsole.log(`exiting with code: ${exitCode}`);
+	} catch (err) {
+		nativeConsole.error(err);
+	}
+	try {
+		// go through all of the information captured during evaluation and summarize it
+		//  ie. look through each assertion/error and decide if a particular file is passed, failed or errored
+		nativeConsole.log('\n--- interpreting reports ---\n');
+		reportify.summarizeReports(index);
 
-  } catch (err) {
-    nativeConsole.error(err)
-  }
+		// render markdown for each file/folder based on the summaries created above
+		nativeConsole.log("\n--- generating reviews's ---\n");
+		reviewify.generateReviews(index);
+
+		// append any asynchronous exceptions that didn't have a callstack as an extra section in the main README
+		index.review += reviewify.renderUnsorted(index.unsortedLogs);
+
+		nativeConsole.log("\n--- writing reviews's ---\n");
+
+		// write the new markdown files!
+		index.reviewPath = index.reviewPath;
+
+		// https://geedew.com/remove-a-directory-that-is-not-empty-in-nodejs/
+		const deleteFolderRecursive = function(pathToDelete) {
+			if (fs.existsSync(pathToDelete)) {
+				const files = fs.readdirSync(pathToDelete);
+				files.forEach((file) => {
+					const curPath = path.normalize(path.join(pathToDelete, file));
+					if (fs.lstatSync(curPath).isDirectory()) {
+						deleteFolderRecursive(curPath);
+					} else {
+						fs.unlinkSync(curPath);
+					}
+				});
+				fs.rmdirSync(pathToDelete);
+			}
+		};
+		const absReviewPath = path.normalize(path.join(PARENT_DIR, index.reviewPath));
+		deleteFolderRecursive(absReviewPath);
+
+		reviewify.writeReviews(index, PARENT_DIR);
+
+		// done!
+		nativeConsole.log(`exiting with code: ${exitCode}`);
+	} catch (err) {
+		nativeConsole.error(err);
+	}
 });
-
 
 nativeConsole.log('\n--- evaluating .js files ---\n');
 
 // add the date/time of most recent evaluation
-index.lastEvaluation = (new Date()).toJSON();
+index.lastEvaluation = new Date().toJSON();
 
 // actually evaluate the exercises
 //  check out /lib/evaluate.js for more details
 evaluate(reportMap, PARENT_DIR, reportThrown, config.maxIterations);
 
-
-
 nativeConsole.log('\n--- ... waiting for the event loop to clear ---\n');
-
-
-
-
-
-
-

@@ -1,5 +1,3 @@
-'use strict';
-
 // practice using variables declared with let
 //  fill in the blanks to log the commented values
 // and don't just write the correct answer directly!
@@ -9,11 +7,11 @@ let fruit = 'banana';
 let desert = 'cake';
 let topping = 'frosting';
 
-_;
+desert = `chocolate ${desert}`;
 console.log(desert); // should log 'chocolate cake'
 
-_;
+desert = `${desert} with ${topping}`;
 console.log(desert); // should log 'chocolate cake with frosting'
 
-_;
+desert = `${desert} and ${fruit}`;
 console.log(desert); // should log 'chocolate cake with frosting and banana'

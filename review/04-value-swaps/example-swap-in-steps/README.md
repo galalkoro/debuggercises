@@ -2,24 +2,30 @@
 
 > 6/21/2020, 9:05:10 AM 
 
+<<<<<<< HEAD
 ## [exercises](../../README.md)/[04-value-swaps](../README.md)/example-swap-in-steps 
+=======
+> 6/19/2020, 12:00:58 AM 
 
-- [/0-setup.js](#0-setupjs) - _fail_ 
-- [/1-store-y.js](#1-store-yjs) - _fail_ 
-- [/2-reassign-a.js](#2-reassign-ajs) - _fail_ 
+[../README.md](../README.md)
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
+
+- [/0-setup.js](#0-setupjs) - _pass_ 
+- [/1-store-y.js](#1-store-yjs) - _pass_ 
+- [/2-reassign-a.js](#2-reassign-ajs) - _pass_ 
 - [/3-use-stored-y.js](#3-use-stored-yjs) - _pass_ 
 ---
 
 ## /0-setup.js 
 
-> fail 
+> pass 
 >
 > [review source](../../../exercises/04-value-swaps/example-swap-in-steps/0-setup.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
 ```
 
 ```js
@@ -29,23 +35,25 @@
 //  before you have written any code
 
 // declare & assign variables
-let a = "y";
-let b = "x";
+let a = 'y';
+let b = 'x';
 let temp = null;
 
 // swap the values stored by a and b ...
-
+temp = a;
+a = b;
+b = temp;
 
 // assert expected values
 
-const isTrue1 = a === "x";
-console.assert(isTrue1, "Test 1");
+const isTrue1 = a === 'x';
+console.assert(isTrue1, 'Test 1');
 
-const isTrue2 = b === "y";
-console.assert(isTrue2, "Test 2");
+const isTrue2 = b === 'y';
+console.assert(isTrue2, 'Test 2');
 
-const isTrue3 = temp === "y";
-console.assert(isTrue3, "Test 3");
+const isTrue3 = temp === 'y';
+console.assert(isTrue3, 'Test 3');
 
 ```
 
@@ -55,13 +63,13 @@ console.assert(isTrue3, "Test 3");
 
 ## /1-store-y.js 
 
-> fail 
+> pass 
 >
 > [review source](../../../exercises/04-value-swaps/example-swap-in-steps/1-store-y.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
++ PASS: Test 1
++ PASS: Test 2
 + PASS: Test 3
 ```
 
@@ -77,7 +85,8 @@ let temp = null;
 
 // swap the values stored by a and b ...
 temp = a;
-
+ a = b; //a = x
+ b = temp;
 
 // assert expected values
 
@@ -89,7 +98,6 @@ console.assert(isTrue2, "Test 2");
 
 const isTrue3 = temp === "y";
 console.assert(isTrue3, "Test 3");
-
 ```
 
 [TOP](#debuggercises)
@@ -98,13 +106,13 @@ console.assert(isTrue3, "Test 3");
 
 ## /2-reassign-a.js 
 
-> fail 
+> pass 
 >
 > [review source](../../../exercises/04-value-swaps/example-swap-in-steps/2-reassign-a.js)
 
 ```txt
 + PASS: Test 1
-- FAIL: Test 2
++ PASS: Test 2
 + PASS: Test 3
 ```
 
@@ -114,25 +122,25 @@ console.assert(isTrue3, "Test 3");
 // this file shows the second line of code to write
 
 // declare & assign variables
-let a = "y";
-let b = "x";
+let a = 'y';
+let b = 'x';
 let temp = null;
 
 // swap the values stored by a and b ...
 temp = a;
 a = b;
-
+b = temp;
 
 // assert expected values
 
-const isTrue1 = a === "x";
-console.assert(isTrue1, "Test 1");
+const isTrue1 = a === 'x';
+console.assert(isTrue1, 'Test 1');
 
-const isTrue2 = b === "y";
-console.assert(isTrue2, "Test 2");
+const isTrue2 = b === 'y';
+console.assert(isTrue2, 'Test 2');
 
-const isTrue3 = temp === "y";
-console.assert(isTrue3, "Test 3");
+const isTrue3 = temp === 'y';
+console.assert(isTrue3, 'Test 3');
 
 ```
 

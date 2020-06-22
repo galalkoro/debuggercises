@@ -1,5 +1,6 @@
 // PS. Study this in JS Tutor and the debugger
 
+<<<<<<< HEAD
 // 1: use strict
 'use strict';
 
@@ -9,6 +10,14 @@ const flipper = (param1, param2) => {
   return param2 + param1;
   // 5, 12: global result variable is declared & assigned
 };
+=======
+// 0: Creation Phase, function is declared
+function flipper(param1, param2) {
+	// 2 and 9: a return value is generated
+	return param2 + param1;
+	// 3 and 10: global result variable is declared & assigned
+}
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 // 3: flipper is executed, creating a new frame
 //    parameters are assigned values using 'a' & 'b'
@@ -31,5 +40,3 @@ const result2 = flipper(arg1, arg2);
 const isTrue2 = result2 === 'yx';
 // 14: the second assertion is evaluated
 console.assert(isTrue2, 'Assertion 2');
-
-

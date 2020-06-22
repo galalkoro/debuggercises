@@ -2,7 +2,13 @@
 
 > 6/21/2020, 9:05:10 AM 
 
+<<<<<<< HEAD
 ## [exercises](../../README.md)/[05-functions-101](../README.md)/0-examples 
+=======
+> 6/19/2020, 12:00:58 AM 
+
+[../README.md](../README.md)
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 - [/1-declaration-vs-execution.js](#1-declaration-vs-executionjs)  
 - [/2-parameters-and-arguments.js](#2-parameters-and-argumentsjs)  
@@ -172,6 +178,7 @@ console.assert(isTrue5, 'Assertion 5');
 ```js
 // PS. Study this in JS Tutor and the debugger
 
+<<<<<<< HEAD
 // 1: use strict
 'use strict';
 
@@ -181,6 +188,14 @@ const flipper = (param1, param2) => {
   return param2 + param1;
   // 5, 12: global result variable is declared & assigned
 };
+=======
+// 0: Creation Phase, function is declared
+function flipper(param1, param2) {
+	// 2 and 9: a return value is generated
+	return param2 + param1;
+	// 3 and 10: global result variable is declared & assigned
+}
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 // 3: flipper is executed, creating a new frame
 //    parameters are assigned values using 'a' & 'b'
@@ -203,8 +218,6 @@ const result2 = flipper(arg1, arg2);
 const isTrue2 = result2 === 'yx';
 // 14: the second assertion is evaluated
 console.assert(isTrue2, 'Assertion 2');
-
-
 
 ```
 

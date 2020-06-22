@@ -2,7 +2,13 @@
 
 > 6/21/2020, 9:05:10 AM 
 
+<<<<<<< HEAD:review/12-functions-301/1-fill-in-the-blanks/README.md
 ## [exercises](../../README.md)/[12-functions-301](../README.md)/1-fill-in-the-blanks 
+=======
+> 6/19/2020, 12:00:58 AM 
+
+[../README.md](../README.md)
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b:review/10-functions-201/1-fill-in-the-blanks/README.md
 
 - [/1-write-tests.js](#1-write-testsjs) - _incomplete_ 
 - [/2-write-tests.js](#2-write-testsjs) - _incomplete_ 
@@ -18,6 +24,7 @@
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
+<<<<<<< HEAD:review/12-functions-301/1-fill-in-the-blanks/README.md
     at Object.<anonymous> (  ...  /exercises/12-functions-301/1-fill-in-the-blanks/1-write-tests.js:23:19)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
@@ -28,6 +35,18 @@ UNCAUGHT: ReferenceError: _ is not defined
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+    at Object.<anonymous> (  ...  /exercises/10-functions-201/1-fill-in-the-blanks/1-write-tests.js:23:19)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:113:1) 
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b:review/10-functions-201/1-fill-in-the-blanks/README.md
 ```
 
 ```js
@@ -103,6 +122,7 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
+<<<<<<< HEAD:review/12-functions-301/1-fill-in-the-blanks/README.md
     at Object.<anonymous> (  ...  /exercises/12-functions-301/1-fill-in-the-blanks/2-write-tests.js:22:19)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
@@ -113,6 +133,18 @@ UNCAUGHT: ReferenceError: _ is not defined
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+    at Object.<anonymous> (  ...  /exercises/10-functions-201/1-fill-in-the-blanks/2-write-tests.js:22:19)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:113:1) 
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b:review/10-functions-201/1-fill-in-the-blanks/README.md
 ```
 
 ```js
@@ -187,6 +219,7 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
+<<<<<<< HEAD:review/12-functions-301/1-fill-in-the-blanks/README.md
     at sameTruthiness (  ...  /exercises/12-functions-301/1-fill-in-the-blanks/3-pass-tests.js:14:18)
     at Object.<anonymous> (  ...  /exercises/12-functions-301/1-fill-in-the-blanks/3-pass-tests.js:22:19)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
@@ -197,6 +230,18 @@ UNCAUGHT: ReferenceError: _ is not defined
     at require (internal/modules/cjs/helpers.js:73:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
+=======
+    at sameTruthiness (  ...  /exercises/10-functions-201/1-fill-in-the-blanks/3-pass-tests.js:14:18)
+    at Object.<anonymous> (  ...  /exercises/10-functions-201/1-fill-in-the-blanks/3-pass-tests.js:22:19)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7) 
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b:review/10-functions-201/1-fill-in-the-blanks/README.md
 ```
 
 ```js
@@ -270,6 +315,7 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
+<<<<<<< HEAD:review/12-functions-301/1-fill-in-the-blanks/README.md
     at mystery (  ...  /exercises/12-functions-301/1-fill-in-the-blanks/4-pass-tests.js:14:18)
     at Object.<anonymous> (  ...  /exercises/12-functions-301/1-fill-in-the-blanks/4-pass-tests.js:22:19)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
@@ -280,6 +326,18 @@ UNCAUGHT: ReferenceError: _ is not defined
     at require (internal/modules/cjs/helpers.js:73:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
+=======
+    at mystery (  ...  /exercises/10-functions-201/1-fill-in-the-blanks/4-pass-tests.js:14:18)
+    at Object.<anonymous> (  ...  /exercises/10-functions-201/1-fill-in-the-blanks/4-pass-tests.js:22:19)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7) 
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b:review/10-functions-201/1-fill-in-the-blanks/README.md
 ```
 
 ```js
@@ -343,3 +401,200 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 [TOP](#debuggercises)
 
+<<<<<<< HEAD:review/12-functions-301/1-fill-in-the-blanks/README.md
+=======
+---
+
+## /5-twins.js 
+
+> incomplete 
+>
+> [review source](../../../exercises/10-functions-201/1-fill-in-the-blanks/5-twins.js)
+
+```txt
+UNCAUGHT: ReferenceError: _ is not defined
+    at notAndA (  ...  /exercises/10-functions-201/1-fill-in-the-blanks/5-twins.js:16:18)
+    at Object.<anonymous> (  ...  /exercises/10-functions-201/1-fill-in-the-blanks/5-twins.js:42:20)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7) 
+```
+
+```js
+'use strict';
+
+// write two different implementations with the same behavior
+//  hint: demorgan
+
+/**
+ * returns true if neither argument is true, false if either are true
+ * @param {boolean} x
+ * @param {boolean} y
+ * @returns {boolean}
+ */
+function notAndA(x, y) {
+  if (typeof x !== 'boolean') { throw new TypeError(); }
+  if (typeof y !== 'boolean') { throw new TypeError(); }
+
+  const result = _;
+
+  if (typeof result !== 'boolean') { throw new TypeError(); }
+  return result;
+}
+
+/**
+ * returns true if neither argument is true, false if either are true
+ * @param {boolean} x
+ * @param {boolean} y
+ * @returns {boolean}
+ */
+function notAndB(x, y) {
+  if (typeof x !== 'boolean') { throw new TypeError(); }
+  if (typeof y !== 'boolean') { throw new TypeError(); }
+
+  const result = _;
+
+  if (typeof result !== 'boolean') { throw new TypeError(); }
+  return result;
+}
+
+
+const _1_arg1 = false;
+const _1_arg2 = false;
+const _1_expect = true;
+const _1_actualA = notAndA(_1_arg1, _1_arg2);
+const _1_actualB = notAndB(_1_arg1, _1_arg2);
+console.assert(_1_actualA === _1_expect, 'Test 1 A');
+console.assert(_1_actualB === _1_expect, 'Test 1 B');
+
+const _2_arg1 = true;
+const _2_arg2 = false;
+const _2_expect = false;
+const _2_actualA = notAndA(_2_arg1, _2_arg2);
+const _2_actualB = notAndB(_2_arg1, _2_arg2);
+console.assert(_2_actualA === _2_expect, 'Test 2 A');
+console.assert(_2_actualB === _2_expect, 'Test 2 B');
+
+const _3_arg1 = false;
+const _3_arg2 = true;
+const _3_expect = false;
+const _3_actualA = notAndA(_3_arg1, _3_arg2);
+const _3_actualB = notAndB(_3_arg1, _3_arg2);
+console.assert(_3_actualA === _3_expect, 'Test 3 A');
+console.assert(_3_actualB === _3_expect, 'Test 3 B');
+
+const _4_arg1 = true;
+const _4_arg2 = true;
+const _4_expect = false;
+const _4_actualA = notAndA(_4_arg1, _4_arg2);
+const _4_actualB = notAndB(_4_arg1, _4_arg2);
+console.assert(_4_actualA === _4_expect, 'Test 4 A');
+console.assert(_4_actualB === _4_expect, 'Test 4 B');
+
+```
+
+[TOP](#debuggercises)
+
+---
+
+## /6-twins.js 
+
+> incomplete 
+>
+> [review source](../../../exercises/10-functions-201/1-fill-in-the-blanks/6-twins.js)
+
+```txt
+UNCAUGHT: ReferenceError: _ is not defined
+    at notAndA (  ...  /exercises/10-functions-201/1-fill-in-the-blanks/6-twins.js:16:18)
+    at Object.<anonymous> (  ...  /exercises/10-functions-201/1-fill-in-the-blanks/6-twins.js:42:20)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7) 
+```
+
+```js
+'use strict';
+
+// write two different implementations with the same behavior
+//  hint: demorgan
+
+/**
+ * returns true if either argument is false, false if both arguments are true
+ * @param {boolean} x
+ * @param {boolean} y
+ * @returns {boolean}
+ */
+function notAndA(x, y) {
+  if (typeof x !== 'boolean') { throw new TypeError(); }
+  if (typeof y !== 'boolean') { throw new TypeError(); }
+
+  const result = _;
+
+  if (typeof result !== 'boolean') { throw new TypeError(); }
+  return result;
+}
+
+/**
+ * returns true if either argument is false, false if both arguments are true
+ * @param {boolean} x
+ * @param {boolean} y
+ * @returns {boolean}
+ */
+function notAndB(x, y) {
+  if (typeof x !== 'boolean') { throw new TypeError(); }
+  if (typeof y !== 'boolean') { throw new TypeError(); }
+
+  const result = _;
+
+  if (typeof result !== 'boolean') { throw new TypeError(); }
+  return result;
+}
+
+
+const _1_arg1 = false;
+const _1_arg2 = false;
+const _1_expect = true;
+const _1_actualA = notAndA(_1_arg1, _1_arg2);
+const _1_actualB = notAndB(_1_arg1, _1_arg2);
+console.assert(_1_actualA === _1_expect, 'Test 1 A');
+console.assert(_1_actualB === _1_expect, 'Test 1 B');
+
+const _2_arg1 = true;
+const _2_arg2 = false;
+const _2_expect = true;
+const _2_actualA = notAndA(_2_arg1, _2_arg2);
+const _2_actualB = notAndB(_2_arg1, _2_arg2);
+console.assert(_2_actualA === _2_expect, 'Test 2 A');
+console.assert(_2_actualB === _2_expect, 'Test 2 B');
+
+const _3_arg1 = false;
+const _3_arg2 = true;
+const _3_expect = true;
+const _3_actualA = notAndA(_3_arg1, _3_arg2);
+const _3_actualB = notAndB(_3_arg1, _3_arg2);
+console.assert(_3_actualA === _3_expect, 'Test 3 A');
+console.assert(_3_actualB === _3_expect, 'Test 3 B');
+
+const _4_arg1 = true;
+const _4_arg2 = true;
+const _4_expect = false;
+const _4_actualA = notAndA(_4_arg1, _4_arg2);
+const _4_actualB = notAndB(_4_arg1, _4_arg2);
+console.assert(_4_actualA === _4_expect, 'Test 4 A');
+console.assert(_4_actualB === _4_expect, 'Test 4 B');
+
+```
+
+[TOP](#debuggercises)
+
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b:review/10-functions-201/1-fill-in-the-blanks/README.md

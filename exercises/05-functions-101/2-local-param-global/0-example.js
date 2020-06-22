@@ -18,9 +18,15 @@ console.log('\n-- Parameters ---');
 //  all variables used inside this function's body are declared as parameters
 //  the variables get their value from arguments when the function is called
 
+<<<<<<< HEAD
 const usesParameters = (param1, param2) => {
   return `${param1}, ${param2}`;
 };
+=======
+function usesParameters(param1, param2) {
+	return `${param1}, ${param2}`;
+}
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 const fromParams1 = usesParameters('hi', 'bye');
 console.log('fromParams1:', fromParams1);
@@ -28,16 +34,24 @@ console.log('fromParams1:', fromParams1);
 const fromParams2 = usesParameters('a', 'b');
 console.log('fromParams2:', fromParams2);
 
-
 console.log('\n-- Local Variables ---');
+
 //  all variables used inside this function's body are declared locally
 //  the variables get their value from a local assignmnet
 
+<<<<<<< HEAD
 const usesLocals = () => {
   const local1 = 'town';
   const local2 = 'ship';
   return `${local1}, ${local2}`;
 };
+=======
+function usesLocals() {
+	const local1 = 'town';
+	const local2 = 'ship';
+	return `${local1}, ${local2}`;
+}
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 const fromLocals1 = usesLocals();
 console.log('fromLocals1:', fromLocals1);
@@ -45,16 +59,23 @@ console.log('fromLocals1:', fromLocals1);
 const fromLocals2 = usesLocals();
 console.log('fromLocals2:', fromLocals2);
 
-
 console.log('\n-- Global Variables ---');
 //  all variables used inside this function's body are declared globally
 //  the variables get their value from local and global assignments (confusing!)
 
+<<<<<<< HEAD
 const usesGlobals = () => {
   global1 = `${global}-`;
   global2 = '-'
   return `${global1}, ${global2}`;
 };
+=======
+function usesGlobals() {
+	global1 = `${global}-`;
+	global2 = '-';
+	return `${global1}, ${global2}`;
+}
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 let global1 = 'a';
 let global2 = 'b';
@@ -74,7 +95,6 @@ const fromGlobals2 = usesGlobals();
 console.log('fromGlobals2:', fromGlobals2);
 console.log('global1:', global1);
 console.log('global2:', global2, '\n');
-
 
 global1 = `${global}|`;
 global2 = `${global}|`;

@@ -2,7 +2,18 @@
 
 > 6/21/2020, 9:05:10 AM 
 
+<<<<<<< HEAD
 ## [exercises](../../README.md)/[07-logical-operators](../README.md)/exercises 
+=======
+> 6/19/2020, 12:00:58 AM 
+
+[../README.md](../README.md)
+
+- [/and.js](#andjs) - _fail_ 
+- [/not.js](#notjs) - _fail_ 
+- [/or.js](#orjs) - _fail_ 
+- [/ternary.js](#ternaryjs) - _fail_ 
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 - [/and.js](#andjs) - _incomplete_ 
 - [/not.js](#notjs) - _incomplete_ 

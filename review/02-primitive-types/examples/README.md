@@ -2,7 +2,13 @@
 
 > 6/21/2020, 9:05:10 AM 
 
+<<<<<<< HEAD
 ## [exercises](../../README.md)/[02-primitive-types](../README.md)/examples 
+=======
+> 6/19/2020, 12:00:58 AM 
+
+[../README.md](../README.md)
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 - [/boolean-undefined-null.js](#boolean-undefined-nulljs)  
 - [/number.js](#numberjs)  

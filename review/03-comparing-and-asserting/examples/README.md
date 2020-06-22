@@ -2,10 +2,16 @@
 
 > 6/21/2020, 9:05:10 AM 
 
+<<<<<<< HEAD
 ## [exercises](../../README.md)/[03-comparing-and-asserting](../README.md)/examples 
+=======
+> 6/19/2020, 12:00:58 AM 
+
+[../README.md](../README.md)
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 - [/1-strict-equality.js](#1-strict-equalityjs)  
-- [/2-extra-assignment-vs-comparison.js](#2-extra-assignment-vs-comparisonjs) - _error (syntax)_ 
+- [/2-extra-assignment-vs-comparison.js](#2-extra-assignment-vs-comparisonjs)  
 - [/3-console-assert.js](#3-console-assertjs) - _fail_ 
 - [/4-testing-with-assert.js](#4-testing-with-assertjs) - _pass_ 
 - [/object-is.js](#object-isjs)  
@@ -82,11 +88,12 @@ console.log(typeof huh, huh);
 
 ## /2-extra-assignment-vs-comparison.js 
 
-> error (syntax) 
+>  
 >
 > [review source](../../../exercises/03-comparing-and-asserting/examples/2-extra-assignment-vs-comparison.js)
 
 ```txt
+<<<<<<< HEAD
 UNCAUGHT:   ...  /exercises/03-comparing-and-asserting/examples/2-extra-assignment-vs-comparison.js:29
 'value 2' = variable; // uncomment this line for an error
 ^^^^^^^^^
@@ -102,6 +109,13 @@ SyntaxError: Invalid left-hand side in assignment
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+LOG: string  value 1
+LOG: string  value 1
+LOG: boolean  false
+LOG: boolean  true
+LOG: boolean  true
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 ```
 
 ```js
@@ -133,9 +147,7 @@ console.log(typeof thirdComparison, thirdComparison);
 
 // = assignments cannot be written either way
 //  Invalid left-hand side in assignment
-'value 2' = variable; // uncomment this line for an error
-
-
+//'value 2' = variable; // uncomment this line for an error
 
 ```
 
@@ -195,8 +207,22 @@ LOG: -- examples --
 + PASS: Assertion 2
 + PASS: Assertion 3
 LOG: -- practice exercises --
+<<<<<<< HEAD
 + PASS: Assertion 4
 + PASS: Assertion 5
+=======
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/03-comparing-and-asserting/examples/4-testing-with-assert.js:28:33)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:113:1) 
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 ```
 
 ```js

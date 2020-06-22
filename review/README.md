@@ -1,6 +1,12 @@
 # Debuggercises 
 
+<<<<<<< HEAD
 > 6/21/2020, 9:05:10 AM 
+=======
+## /exercises 
+
+> 6/19/2020, 12:00:58 AM 
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 ## /exercises 
 
@@ -18,11 +24,11 @@
     - [/2-reusing-variables.js](./01-variables/examples/README.md#2-reusing-variablesjs)  
     - [/3-const-vs-let.js](./01-variables/examples/README.md#3-const-vs-letjs) - _error_ 
   - [/exercises](./01-variables/exercises/README.md)
-    - [/1-let.js](./01-variables/exercises/README.md#1-letjs) - _incomplete_ 
-    - [/2-let.js](./01-variables/exercises/README.md#2-letjs) - _incomplete_ 
-    - [/3-let-or-const.js](./01-variables/exercises/README.md#3-let-or-constjs) - _incomplete_ 
-    - [/4-let-or-const.js](./01-variables/exercises/README.md#4-let-or-constjs) - _incomplete_ 
-    - [/5-let-or-const.js](./01-variables/exercises/README.md#5-let-or-constjs) - _incomplete_ 
+    - [/1-let.js](./01-variables/exercises/README.md#1-letjs)  
+    - [/2-let.js](./01-variables/exercises/README.md#2-letjs)  
+    - [/3-let-or-const.js](./01-variables/exercises/README.md#3-let-or-constjs)  
+    - [/4-let-or-const.js](./01-variables/exercises/README.md#4-let-or-constjs)  
+    - [/5-let-or-const.js](./01-variables/exercises/README.md#5-let-or-constjs)  
 - [/02-primitive-types](./02-primitive-types/README.md)
   - [/examples](./02-primitive-types/examples/README.md)
     - [/boolean-undefined-null.js](./02-primitive-types/examples/README.md#boolean-undefined-nulljs)  
@@ -30,32 +36,32 @@
     - [/string.js](./02-primitive-types/examples/README.md#stringjs)  
     - [/typeof.js](./02-primitive-types/examples/README.md#typeofjs)  
   - [/exercises](./02-primitive-types/exercises/README.md)
-    - [/fill-in-the-type.js](./02-primitive-types/exercises/README.md#fill-in-the-typejs) - _incomplete_ 
+    - [/fill-in-the-type.js](./02-primitive-types/exercises/README.md#fill-in-the-typejs)  
 - [/03-comparing-and-asserting](./03-comparing-and-asserting/README.md)
   - [/examples](./03-comparing-and-asserting/examples/README.md)
     - [/1-strict-equality.js](./03-comparing-and-asserting/examples/README.md#1-strict-equalityjs)  
-    - [/2-extra-assignment-vs-comparison.js](./03-comparing-and-asserting/examples/README.md#2-extra-assignment-vs-comparisonjs) - _error (syntax)_ 
+    - [/2-extra-assignment-vs-comparison.js](./03-comparing-and-asserting/examples/README.md#2-extra-assignment-vs-comparisonjs)  
     - [/3-console-assert.js](./03-comparing-and-asserting/examples/README.md#3-console-assertjs) - _fail_ 
     - [/4-testing-with-assert.js](./03-comparing-and-asserting/examples/README.md#4-testing-with-assertjs) - _pass_ 
     - [/object-is.js](./03-comparing-and-asserting/examples/README.md#object-isjs)  
     - [/strict-inequality.js](./03-comparing-and-asserting/examples/README.md#strict-inequalityjs)  
   - [/exercises](./03-comparing-and-asserting/exercises/README.md)
-    - [/1.js](./03-comparing-and-asserting/exercises/README.md#1js) - _incomplete_ 
-    - [/2.js](./03-comparing-and-asserting/exercises/README.md#2js) - _incomplete_ 
+    - [/1.js](./03-comparing-and-asserting/exercises/README.md#1js) - _pass_ 
+    - [/2.js](./03-comparing-and-asserting/exercises/README.md#2js) - _pass_ 
 - [/04-value-swaps](./04-value-swaps/README.md)
   - [/example-swap-in-steps](./04-value-swaps/example-swap-in-steps/README.md)
-    - [/0-setup.js](./04-value-swaps/example-swap-in-steps/README.md#0-setupjs) - _fail_ 
-    - [/1-store-y.js](./04-value-swaps/example-swap-in-steps/README.md#1-store-yjs) - _fail_ 
-    - [/2-reassign-a.js](./04-value-swaps/example-swap-in-steps/README.md#2-reassign-ajs) - _fail_ 
+    - [/0-setup.js](./04-value-swaps/example-swap-in-steps/README.md#0-setupjs) - _pass_ 
+    - [/1-store-y.js](./04-value-swaps/example-swap-in-steps/README.md#1-store-yjs) - _pass_ 
+    - [/2-reassign-a.js](./04-value-swaps/example-swap-in-steps/README.md#2-reassign-ajs) - _pass_ 
     - [/3-use-stored-y.js](./04-value-swaps/example-swap-in-steps/README.md#3-use-stored-yjs) - _pass_ 
   - [/exercises](./04-value-swaps/exercises/README.md)
-    - [/1-double-swap.js](./04-value-swaps/exercises/README.md#1-double-swapjs) - _incomplete_ 
-    - [/2-triple-swap.js](./04-value-swaps/exercises/README.md#2-triple-swapjs) - _incomplete_ 
-    - [/3-triple-swap.js](./04-value-swaps/exercises/README.md#3-triple-swapjs) - _incomplete_ 
-    - [/4-quadruple-swap.js](./04-value-swaps/exercises/README.md#4-quadruple-swapjs) - _incomplete_ 
-    - [/5-quadruple-swap.js](./04-value-swaps/exercises/README.md#5-quadruple-swapjs) - _incomplete_ 
-    - [/6-let-and-const.js](./04-value-swaps/exercises/README.md#6-let-and-constjs) - _incomplete_ 
-    - [/7-let-and-const.js](./04-value-swaps/exercises/README.md#7-let-and-constjs) - _incomplete_ 
+    - [/1-double-swap.js](./04-value-swaps/exercises/README.md#1-double-swapjs) - _pass_ 
+    - [/2-triple-swap.js](./04-value-swaps/exercises/README.md#2-triple-swapjs) - _pass_ 
+    - [/3-triple-swap.js](./04-value-swaps/exercises/README.md#3-triple-swapjs) - _pass_ 
+    - [/4-quadruple-swap.js](./04-value-swaps/exercises/README.md#4-quadruple-swapjs) - _pass_ 
+    - [/5-quadruple-swap.js](./04-value-swaps/exercises/README.md#5-quadruple-swapjs) - _pass_ 
+    - [/6-let-and-const.js](./04-value-swaps/exercises/README.md#6-let-and-constjs) - _pass_ 
+    - [/7-let-and-const.js](./04-value-swaps/exercises/README.md#7-let-and-constjs) - _pass_ 
 - [/05-functions-101](./05-functions-101/README.md)
   - [/0-examples](./05-functions-101/0-examples/README.md)
     - [/1-declaration-vs-execution.js](./05-functions-101/0-examples/README.md#1-declaration-vs-executionjs)  
@@ -65,17 +71,17 @@
     - [/5-scope.js](./05-functions-101/0-examples/README.md#5-scopejs)  
     - [/6-test-cases.js](./05-functions-101/0-examples/README.md#6-test-casesjs) - _pass_ 
   - [/1-scrambles](./05-functions-101/1-scrambles/README.md)
-    - [/1-write-expected.js](./05-functions-101/1-scrambles/README.md#1-write-expectedjs) - _incomplete_ 
-    - [/2-write-arguments.js](./05-functions-101/1-scrambles/README.md#2-write-argumentsjs) - _incomplete_ 
-    - [/3-write-function.js](./05-functions-101/1-scrambles/README.md#3-write-functionjs) - _fail_ 
+    - [/1-write-expected.js](./05-functions-101/1-scrambles/README.md#1-write-expectedjs) - _pass_ 
+    - [/2-write-arguments.js](./05-functions-101/1-scrambles/README.md#2-write-argumentsjs) - _pass_ 
+    - [/3-write-function.js](./05-functions-101/1-scrambles/README.md#3-write-functionjs) - _pass_ 
   - [/2-local-param-global](./05-functions-101/2-local-param-global/README.md)
     - [/0-example.js](./05-functions-101/2-local-param-global/README.md#0-examplejs)  
-    - [/1-parameter-local.js](./05-functions-101/2-local-param-global/README.md#1-parameter-localjs) - _incomplete_ 
-    - [/2-parameter-global.js](./05-functions-101/2-local-param-global/README.md#2-parameter-globaljs) - _incomplete_ 
-    - [/3-parameter-global.js](./05-functions-101/2-local-param-global/README.md#3-parameter-globaljs) - _incomplete_ 
-    - [/5-local-global.js](./05-functions-101/2-local-param-global/README.md#5-local-globaljs) - _incomplete_ 
-    - [/6-local-global.js](./05-functions-101/2-local-param-global/README.md#6-local-globaljs) - _incomplete_ 
-    - [/7-parameter-local-global.js](./05-functions-101/2-local-param-global/README.md#7-parameter-local-globaljs) - _incomplete_ 
+    - [/1-parameter-local.js](./05-functions-101/2-local-param-global/README.md#1-parameter-localjs) - _pass_ 
+    - [/2-parameter-global.js](./05-functions-101/2-local-param-global/README.md#2-parameter-globaljs) - _pass_ 
+    - [/3-parameter-global.js](./05-functions-101/2-local-param-global/README.md#3-parameter-globaljs) - _pass_ 
+    - [/5-local-global.js](./05-functions-101/2-local-param-global/README.md#5-local-globaljs) - _pass_ 
+    - [/6-local-global.js](./05-functions-101/2-local-param-global/README.md#6-local-globaljs) - _pass_ 
+    - [/7-parameter-local-global.js](./05-functions-101/2-local-param-global/README.md#7-parameter-local-globaljs) - _pass_ 
     - [/8-prameter-local-global.js](./05-functions-101/2-local-param-global/README.md#8-prameter-local-globaljs) - _incomplete_ 
     - [/extra-pure-functions.js](./05-functions-101/2-local-param-global/README.md#extra-pure-functionsjs)  
 - [/06-explicit-coercion](./06-explicit-coercion/README.md)

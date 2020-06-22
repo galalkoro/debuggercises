@@ -2,7 +2,13 @@
 
 > 6/21/2020, 9:05:10 AM 
 
+<<<<<<< HEAD:review/12-functions-301/2-fix-the-bugs/README.md
 ## [exercises](../../README.md)/[12-functions-301](../README.md)/2-fix-the-bugs 
+=======
+> 6/19/2020, 12:00:58 AM 
+
+[../README.md](../README.md)
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b:review/10-functions-201/2-fix-the-bugs/README.md
 
 - [/1.js](#1js) - _fail_ 
 - [/2.js](#2js) - _error_ 
@@ -93,6 +99,7 @@ console.assert(_6_actual === _6_expect, 'Test 6');
 
 ```txt
 UNCAUGHT: TypeError: Cannot create property 'Length' on string 'carboat'
+<<<<<<< HEAD:review/12-functions-301/2-fix-the-bugs/README.md
     at areNotSameLength (  ...  /exercises/12-functions-301/2-fix-the-bugs/2.js:18:19)
     at Object.<anonymous> (  ...  /exercises/12-functions-301/2-fix-the-bugs/2.js:32:19)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
@@ -103,6 +110,18 @@ UNCAUGHT: TypeError: Cannot create property 'Length' on string 'carboat'
     at require (internal/modules/cjs/helpers.js:73:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
+=======
+    at areNotSameLength (  ...  /exercises/10-functions-201/2-fix-the-bugs/2.js:18:19)
+    at Object.<anonymous> (  ...  /exercises/10-functions-201/2-fix-the-bugs/2.js:32:19)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7) 
+>>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b:review/10-functions-201/2-fix-the-bugs/README.md
 ```
 
 ```js
