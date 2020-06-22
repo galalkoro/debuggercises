@@ -2,17 +2,16 @@
 
 let global = '<3';
 
-<<<<<<< HEAD
 const jazz = (parameter) => {
-  global = `${global} jazzy`;
-  return `${global} ${parameter}`;
+	global = `${global} jazzy`;
+	return `${global} ${parameter}`;
 };
-=======
+
 function jazz(parameter) {
 	global = `${global} jazzy`;
 	return `${global} ${parameter}`;
 }
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
+b;
 
 const jazzReturn1 = jazz('hello');
 const jazz1 = jazzReturn1 === '<3 jazzy hello';

@@ -2,19 +2,17 @@
 
 let global = '.';
 
-<<<<<<< HEAD
 const funk = (parameter) => {
-  const local = `funky ${global}`;
-  global = `${global} ${global}`;
-  return `${parameter} ${local} ${global}`;
+	const local = `funky ${global}`;
+	global = `${global} ${global}`;
+	return `${parameter} ${local} ${global}`;
 };
-=======
+
 function funk(parameter) {
 	const local = `funky ${global}`;
 	global = `${global} ${global}`;
 	return `${parameter} ${local} ${global}`;
 }
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 const globalTest1 = global === '.';
 console.assert(globalTest1, 'Test 1: global');

@@ -2,19 +2,17 @@
 
 let global = 'awesome';
 
-<<<<<<< HEAD
 const funk = () => {
-  const local = 'funky'
-  global = `#${global}`;
-  return `${local} ${global}`;
+	const local = 'funky';
+	global = `#${global}`;
+	return `${local} ${global}`;
 };
-=======
+
 function funk() {
 	const local = 'funky';
 	global = `#${global}`;
 	return `${local} ${global}`;
 }
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 const funkReturn1 = funk();
 const funkTest1 = funkReturn1 === 'funky #awesome';

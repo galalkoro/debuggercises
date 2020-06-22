@@ -1,16 +1,14 @@
 'use strict';
 
-<<<<<<< HEAD
 const funk = (parameter) => {
-  const local = `funky`;
-  return `${local} ${parameter}`;
+	const local = `funky`;
+	return `${local} ${parameter}`;
 };
-=======
+
 function funk(parameter) {
 	const local = `funky`;
 	return `${local} ${parameter}`;
 }
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 const funkReturn1 = funk('hello');
 const funk1 = funkReturn1 === 'funky hello';
@@ -24,12 +22,9 @@ const funkReturn3 = funk('tree');
 const funk3 = funkReturn3 === 'funky tree';
 console.assert(funk3, 'Test 3: funk');
 
-<<<<<<< HEAD
-
-
 const jazz = (parameter) => {
-  const local = `jazzy`;
-  return `${local} ${parameter}`;
+	const local = `jazzy`;
+	return `${local} ${parameter}`;
 };
 
 const jazzReturn1 = jazz('hello');
@@ -42,7 +37,7 @@ console.assert(jazz2, 'Test 2: jazz');
 
 const jazzReturn3 = jazz('tree');
 const jazz3 = jazzReturn3 === _;
-=======
+
 function jazz(parameter) {
 	const local = `jazzy`;
 	return `${local} ${parameter}`;
@@ -58,5 +53,5 @@ console.assert(jazz2, 'Test 2: jazz');
 
 const jazzReturn3 = jazz('tree');
 const jazz3 = jazzReturn3 === 'jazzy tree';
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
+
 console.assert(jazz3, 'Test 3: jazz');

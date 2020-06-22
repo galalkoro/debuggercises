@@ -11,17 +11,15 @@
 
 let global = '';
 
-<<<<<<< HEAD
 const funk = (parameter) => {
-  global = `${global}funky`;
-  return `${global} ${parameter}`;
+	global = `${global}funky`;
+	return `${global} ${parameter}`;
 };
-=======
+
 function funk(parameter) {
 	global = `${global}funky`;
 	return `${global} ${parameter}`;
 }
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 const funkReturn1 = funk('hello');
 const funk1 = funkReturn1 === 'funky hello';

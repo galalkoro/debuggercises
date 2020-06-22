@@ -1,8 +1,7 @@
 'use strict';
 
-<<<<<<< HEAD
 const scramble = (param1, param2, param3) => {
-  return `${param3}${param1}${param2}`;
+	return `${param3}${param1}${param2}`;
 };
 
 const _1_expect = _;
@@ -29,7 +28,6 @@ const _6_expect = _;
 const _6_actual = scramble('c', 'a', 'b');
 console.assert(_6_actual === __6expect, 'Test 6');
 
-=======
 function scramble(param1, param2, param3) {
 	return `${param3}${param1}${param2}`;
 }
@@ -75,4 +73,3 @@ const arg18 = 'b';
 const returned6 = scramble(arg18, arg17, arg16);
 const isTrue6 = returned6 === 'cba';
 console.assert(isTrue6, 'Assertion 6');
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b

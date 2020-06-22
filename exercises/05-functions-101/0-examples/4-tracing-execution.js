@@ -1,23 +1,20 @@
 // PS. Study this in JS Tutor and the debugger
-
-<<<<<<< HEAD
 // 1: use strict
 'use strict';
 
 // 2: declare variable flipper and declare the function assigned to it
 const flipper = (param1, param2) => {
-  // 4, 11: a return value is generated
-  return param2 + param1;
-  // 5, 12: global result variable is declared & assigned
+	// 4, 11: a return value is generated
+	return param2 + param1;
+	// 5, 12: global result variable is declared & assigned
 };
-=======
+
 // 0: Creation Phase, function is declared
 function flipper(param1, param2) {
 	// 2 and 9: a return value is generated
 	return param2 + param1;
 	// 3 and 10: global result variable is declared & assigned
 }
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 // 3: flipper is executed, creating a new frame
 //    parameters are assigned values using 'a' & 'b'

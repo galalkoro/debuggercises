@@ -2,19 +2,17 @@
 
 let global = 'turtle';
 
-<<<<<<< HEAD
 const jazz = () => {
-  const local = 'jazzy'
-  global = `${global}!`;
-  return `${global} ${local}`;
+	const local = 'jazzy';
+	global = `${global}!`;
+	return `${global} ${local}`;
 };
-=======
+
 function jazz() {
 	const local = 'jazzy';
 	global = `${global}!`;
 	return `${global} ${local}`;
 }
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 const jazzReturn1 = jazz();
 const jazzTest1 = jazzReturn1 === 'turtle! jazzy';
