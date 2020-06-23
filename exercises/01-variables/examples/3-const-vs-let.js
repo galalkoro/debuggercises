@@ -2,7 +2,6 @@
 
 // const is short for "constant".  a variable that never changes
 
-
 // const variables cannot be declared without assigning a value
 // this will throw an error
 //  "Missing initializer in const declaration"
@@ -18,7 +17,6 @@
 const constantVariable2 = 'constant value';
 constantVariable2 = 'new value';
 console.log(constantVariable2);
-
 
 // all of these things are possible with let
 
