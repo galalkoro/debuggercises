@@ -1,14 +1,8 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/23/2020, 9:54:19 AM 
 
-<<<<<<< HEAD
 ## [exercises](../../README.md)/[04-value-swaps](../README.md)/example-swap-in-steps 
-=======
-> 6/19/2020, 12:00:58 AM 
-
-[../README.md](../README.md)
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 - [/0-setup.js](#0-setupjs) - _pass_ 
 - [/1-store-y.js](#1-store-yjs) - _pass_ 

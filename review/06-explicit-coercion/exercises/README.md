@@ -1,14 +1,8 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/23/2020, 9:54:19 AM 
 
-<<<<<<< HEAD
 ## [exercises](../../README.md)/[06-explicit-coercion](../README.md)/exercises 
-=======
-> 6/19/2020, 12:00:58 AM 
-
-[../README.md](../README.md)
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 - [/1-write-expected.js](#1-write-expectedjs) - _incomplete_ 
 - [/2-write-arguments.js](#2-write-argumentsjs) - _incomplete_ 
@@ -24,17 +18,6 @@
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
     at Object.<anonymous> (  ...  /exercises/06-explicit-coercion/exercises/1-write-expected.js:13:19)
-<<<<<<< HEAD
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
     at Module._compile (internal/modules/cjs/loader.js:778:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
@@ -42,9 +25,8 @@ UNCAUGHT: ReferenceError: _ is not defined
     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
     at Module.require (internal/modules/cjs/loader.js:692:17)
     at require (internal/modules/cjs/helpers.js:25:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:113:1) 
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:159:1) 
 ```
 
 ```js
@@ -112,17 +94,6 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
     at Object.<anonymous> (  ...  /exercises/06-explicit-coercion/exercises/2-write-arguments.js:14:27)
-<<<<<<< HEAD
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
     at Module._compile (internal/modules/cjs/loader.js:778:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
@@ -130,9 +101,8 @@ UNCAUGHT: ReferenceError: _ is not defined
     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
     at Module.require (internal/modules/cjs/loader.js:692:17)
     at require (internal/modules/cjs/helpers.js:25:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:113:1) 
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:159:1) 
 ```
 
 ```js

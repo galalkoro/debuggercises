@@ -1,19 +1,13 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/23/2020, 9:54:19 AM 
 
-<<<<<<< HEAD
 ## [exercises](../../README.md)/[05-functions-101](../README.md)/0-examples 
-=======
-> 6/19/2020, 12:00:58 AM 
-
-[../README.md](../README.md)
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 - [/1-declaration-vs-execution.js](#1-declaration-vs-executionjs)  
 - [/2-parameters-and-arguments.js](#2-parameters-and-argumentsjs)  
 - [/3-return-values.js](#3-return-valuesjs) - _pass_ 
-- [/4-tracing-execution.js](#4-tracing-executionjs) - _pass_ 
+- [/4-tracing-execution.js](#4-tracing-executionjs) - _error (syntax)_ 
 - [/5-scope.js](#5-scopejs)  
 - [/6-test-cases.js](#6-test-casesjs) - _pass_ 
 ---
@@ -166,36 +160,46 @@ console.assert(isTrue5, 'Assertion 5');
 
 ## /4-tracing-execution.js 
 
-> pass 
+> error (syntax) 
 >
 > [review source](../../../exercises/05-functions-101/0-examples/4-tracing-execution.js)
 
 ```txt
-+ PASS: Assertion 1
-+ PASS: Assertion 2
+UNCAUGHT:   ...  /exercises/05-functions-101/0-examples/4-tracing-execution.js:13
+function flipper(param1, param2) {
+^
+
+SyntaxError: Identifier 'flipper' has already been declared
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:159:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30) 
 ```
 
 ```js
 // PS. Study this in JS Tutor and the debugger
-
-<<<<<<< HEAD
 // 1: use strict
 'use strict';
 
 // 2: declare variable flipper and declare the function assigned to it
 const flipper = (param1, param2) => {
-  // 4, 11: a return value is generated
-  return param2 + param1;
-  // 5, 12: global result variable is declared & assigned
+	// 4, 11: a return value is generated
+	return param2 + param1;
+	// 5, 12: global result variable is declared & assigned
 };
-=======
+
 // 0: Creation Phase, function is declared
 function flipper(param1, param2) {
 	// 2 and 9: a return value is generated
 	return param2 + param1;
 	// 3 and 10: global result variable is declared & assigned
 }
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 // 3: flipper is executed, creating a new frame
 //    parameters are assigned values using 'a' & 'b'

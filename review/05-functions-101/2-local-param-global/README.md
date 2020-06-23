@@ -1,56 +1,42 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/23/2020, 9:54:19 AM 
 
-<<<<<<< HEAD
 ## [exercises](../../README.md)/[05-functions-101](../README.md)/2-local-param-global 
-=======
-> 6/19/2020, 12:00:58 AM 
 
-[../README.md](../README.md)
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
-
-- [/0-example.js](#0-examplejs)  
-- [/1-parameter-local.js](#1-parameter-localjs) - _pass_ 
-- [/2-parameter-global.js](#2-parameter-globaljs) - _pass_ 
-- [/3-parameter-global.js](#3-parameter-globaljs) - _pass_ 
-- [/5-local-global.js](#5-local-globaljs) - _pass_ 
-- [/6-local-global.js](#6-local-globaljs) - _pass_ 
-- [/7-parameter-local-global.js](#7-parameter-local-globaljs) - _pass_ 
+- [/0-example.js](#0-examplejs) - _error (syntax)_ 
+- [/1-parameter-local.js](#1-parameter-localjs) - _error (syntax)_ 
+- [/2-parameter-global.js](#2-parameter-globaljs) - _error (syntax)_ 
+- [/3-parameter-global.js](#3-parameter-globaljs) - _error (syntax)_ 
+- [/5-local-global.js](#5-local-globaljs) - _error (syntax)_ 
+- [/6-local-global.js](#6-local-globaljs) - _error (syntax)_ 
+- [/7-parameter-local-global.js](#7-parameter-local-globaljs) - _error (syntax)_ 
 - [/8-prameter-local-global.js](#8-prameter-local-globaljs) - _incomplete_ 
 - [/extra-pure-functions.js](#extra-pure-functionsjs)  
 ---
 
 ## /0-example.js 
 
->  
+> error (syntax) 
 >
 > [review source](../../../exercises/05-functions-101/2-local-param-global/0-example.js)
 
 ```txt
-LOG: 
--- Parameters ---
-LOG: fromParams1:  hi, bye
-LOG: fromParams2:  a, b
-LOG: 
--- Local Variables ---
-LOG: fromLocals1:  town, ship
-LOG: fromLocals2:  town, ship
-LOG: 
--- Global Variables ---
-LOG: fromGlobals1:  [object global]-, -
-LOG: global1:  [object global]-
-LOG: global2:  -  
+UNCAUGHT:   ...  /exercises/05-functions-101/2-local-param-global/0-example.js:25
+function usesParameters(param1, param2) {
+^
 
-LOG: global1:  |
-LOG: global2:  [object global]|  
-
-LOG: fromGlobals2:  [object global]-, -
-LOG: global1:  [object global]-
-LOG: global2:  -  
-
-LOG: global1:  [object global]|
-LOG: global2:  [object global]|
+SyntaxError: Identifier 'usesParameters' has already been declared
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:159:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30) 
 ```
 
 ```js
@@ -74,15 +60,13 @@ console.log('\n-- Parameters ---');
 //  all variables used inside this function's body are declared as parameters
 //  the variables get their value from arguments when the function is called
 
-<<<<<<< HEAD
 const usesParameters = (param1, param2) => {
-  return `${param1}, ${param2}`;
+	return `${param1}, ${param2}`;
 };
-=======
+
 function usesParameters(param1, param2) {
 	return `${param1}, ${param2}`;
 }
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 const fromParams1 = usesParameters('hi', 'bye');
 console.log('fromParams1:', fromParams1);
@@ -95,19 +79,17 @@ console.log('\n-- Local Variables ---');
 //  all variables used inside this function's body are declared locally
 //  the variables get their value from a local assignmnet
 
-<<<<<<< HEAD
 const usesLocals = () => {
-  const local1 = 'town';
-  const local2 = 'ship';
-  return `${local1}, ${local2}`;
+	const local1 = 'town';
+	const local2 = 'ship';
+	return `${local1}, ${local2}`;
 };
-=======
+
 function usesLocals() {
 	const local1 = 'town';
 	const local2 = 'ship';
 	return `${local1}, ${local2}`;
 }
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 const fromLocals1 = usesLocals();
 console.log('fromLocals1:', fromLocals1);
@@ -119,19 +101,17 @@ console.log('\n-- Global Variables ---');
 //  all variables used inside this function's body are declared globally
 //  the variables get their value from local and global assignments (confusing!)
 
-<<<<<<< HEAD
 const usesGlobals = () => {
-  global1 = `${global}-`;
-  global2 = '-'
-  return `${global1}, ${global2}`;
+	global1 = `${global}-`;
+	global2 = '-';
+	return `${global1}, ${global2}`;
 };
-=======
+
 function usesGlobals() {
 	global1 = `${global}-`;
 	global2 = '-';
 	return `${global1}, ${global2}`;
 }
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 let global1 = 'a';
 let global2 = 'b';
@@ -166,47 +146,40 @@ console.log('global2:', global2);
 
 ## /1-parameter-local.js 
 
-> pass 
+> error (syntax) 
 >
 > [review source](../../../exercises/05-functions-101/2-local-param-global/1-parameter-local.js)
 
 ```txt
-<<<<<<< HEAD
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/1-parameter-local.js:9:31)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
+UNCAUGHT:   ...  /exercises/05-functions-101/2-local-param-global/1-parameter-local.js:8
+function funk(parameter) {
+^
+
+SyntaxError: Identifier 'funk' has already been declared
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
-+ PASS: Test 1: funk
-+ PASS: Test 2: funk
-+ PASS: Test 3: funk
-+ PASS: Test 1: jazz
-+ PASS: Test 2: jazz
-+ PASS: Test 3: jazz
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
+    at Object.<anonymous> (  ...  /scripts/review.js:159:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30) 
 ```
 
 ```js
 'use strict';
 
-<<<<<<< HEAD
 const funk = (parameter) => {
-  const local = `funky`;
-  return `${local} ${parameter}`;
+	const local = `funky`;
+	return `${local} ${parameter}`;
 };
-=======
+
 function funk(parameter) {
 	const local = `funky`;
 	return `${local} ${parameter}`;
 }
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 const funkReturn1 = funk('hello');
 const funk1 = funkReturn1 === 'funky hello';
@@ -220,12 +193,9 @@ const funkReturn3 = funk('tree');
 const funk3 = funkReturn3 === 'funky tree';
 console.assert(funk3, 'Test 3: funk');
 
-<<<<<<< HEAD
-
-
 const jazz = (parameter) => {
-  const local = `jazzy`;
-  return `${local} ${parameter}`;
+	const local = `jazzy`;
+	return `${local} ${parameter}`;
 };
 
 const jazzReturn1 = jazz('hello');
@@ -238,7 +208,7 @@ console.assert(jazz2, 'Test 2: jazz');
 
 const jazzReturn3 = jazz('tree');
 const jazz3 = jazzReturn3 === _;
-=======
+
 function jazz(parameter) {
 	const local = `jazzy`;
 	return `${local} ${parameter}`;
@@ -254,7 +224,7 @@ console.assert(jazz2, 'Test 2: jazz');
 
 const jazzReturn3 = jazz('tree');
 const jazz3 = jazzReturn3 === 'jazzy tree';
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
+
 console.assert(jazz3, 'Test 3: jazz');
 
 ```
@@ -265,28 +235,26 @@ console.assert(jazz3, 'Test 3: jazz');
 
 ## /2-parameter-global.js 
 
-> pass 
+> error (syntax) 
 >
 > [review source](../../../exercises/05-functions-101/2-local-param-global/2-parameter-global.js)
 
 ```txt
-<<<<<<< HEAD
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/2-parameter-global.js:20:31)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
+UNCAUGHT:   ...  /exercises/05-functions-101/2-local-param-global/2-parameter-global.js:19
+function funk(parameter) {
+^
+
+SyntaxError: Identifier 'funk' has already been declared
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
-+ PASS: Test 1: funk
-+ PASS: Test 2: funk
-+ PASS: Test 3: funk
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
+    at Object.<anonymous> (  ...  /scripts/review.js:159:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30) 
 ```
 
 ```js
@@ -303,17 +271,15 @@ UNCAUGHT: ReferenceError: _ is not defined
 
 let global = '';
 
-<<<<<<< HEAD
 const funk = (parameter) => {
-  global = `${global}funky`;
-  return `${global} ${parameter}`;
+	global = `${global}funky`;
+	return `${global} ${parameter}`;
 };
-=======
+
 function funk(parameter) {
 	global = `${global}funky`;
 	return `${global} ${parameter}`;
 }
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 const funkReturn1 = funk('hello');
 const funk1 = funkReturn1 === 'funky hello';
@@ -339,28 +305,26 @@ console.assert(funk3, 'Test 3: funk');
 
 ## /3-parameter-global.js 
 
-> pass 
+> error (syntax) 
 >
 > [review source](../../../exercises/05-functions-101/2-local-param-global/3-parameter-global.js)
 
 ```txt
-<<<<<<< HEAD
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/3-parameter-global.js:11:31)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
+UNCAUGHT:   ...  /exercises/05-functions-101/2-local-param-global/3-parameter-global.js:10
+function jazz(parameter) {
+^
+
+SyntaxError: Identifier 'jazz' has already been declared
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
-+ PASS: Test 1: jazz
-+ PASS: Test 2: jazz
-+ PASS: Test 3: jazz
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
+    at Object.<anonymous> (  ...  /scripts/review.js:159:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30) 
 ```
 
 ```js
@@ -368,17 +332,16 @@ UNCAUGHT: ReferenceError: _ is not defined
 
 let global = '<3';
 
-<<<<<<< HEAD
 const jazz = (parameter) => {
-  global = `${global} jazzy`;
-  return `${global} ${parameter}`;
+	global = `${global} jazzy`;
+	return `${global} ${parameter}`;
 };
-=======
+
 function jazz(parameter) {
 	global = `${global} jazzy`;
 	return `${global} ${parameter}`;
 }
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
+b;
 
 const jazzReturn1 = jazz('hello');
 const jazz1 = jazzReturn1 === '<3 jazzy hello';
@@ -404,34 +367,26 @@ console.assert(jazz3, 'Test 3: jazz');
 
 ## /5-local-global.js 
 
-> pass 
+> error (syntax) 
 >
 > [review source](../../../exercises/05-functions-101/2-local-param-global/5-local-global.js)
 
 ```txt
-<<<<<<< HEAD
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/5-local-global.js:12:35)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
+UNCAUGHT:   ...  /exercises/05-functions-101/2-local-param-global/5-local-global.js:11
+function funk() {
+^
+
+SyntaxError: Identifier 'funk' has already been declared
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
-+ PASS: Test 1: funk
-+ PASS: Test 2: global
-+ PASS: Test 3: global
-+ PASS: Test 4: funk
-+ PASS: Test 5: global
-+ PASS: Test 6: global
-+ PASS: Test 7: funk
-+ PASS: Test 8: global
-+ PASS: Test 9: global
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
+    at Object.<anonymous> (  ...  /scripts/review.js:159:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30) 
 ```
 
 ```js
@@ -439,19 +394,17 @@ UNCAUGHT: ReferenceError: _ is not defined
 
 let global = 'awesome';
 
-<<<<<<< HEAD
 const funk = () => {
-  const local = 'funky'
-  global = `#${global}`;
-  return `${local} ${global}`;
+	const local = 'funky';
+	global = `#${global}`;
+	return `${local} ${global}`;
 };
-=======
+
 function funk() {
 	const local = 'funky';
 	global = `#${global}`;
 	return `${local} ${global}`;
 }
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 const funkReturn1 = funk();
 const funkTest1 = funkReturn1 === 'funky #awesome';
@@ -497,34 +450,26 @@ console.assert(globalTest6, 'Test 9: global');
 
 ## /6-local-global.js 
 
-> pass 
+> error (syntax) 
 >
 > [review source](../../../exercises/05-functions-101/2-local-param-global/6-local-global.js)
 
 ```txt
-<<<<<<< HEAD
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/6-local-global.js:12:35)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
+UNCAUGHT:   ...  /exercises/05-functions-101/2-local-param-global/6-local-global.js:11
+function jazz() {
+^
+
+SyntaxError: Identifier 'jazz' has already been declared
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
-+ PASS: Test 1: jazz
-+ PASS: Test 2: global
-+ PASS: Test 3: global
-+ PASS: Test 4: jazz
-+ PASS: Test 5: global
-+ PASS: Test 6: global
-+ PASS: Test 7: jazz
-+ PASS: Test 8: global
-+ PASS: Test 9: global
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
+    at Object.<anonymous> (  ...  /scripts/review.js:159:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30) 
 ```
 
 ```js
@@ -532,19 +477,17 @@ UNCAUGHT: ReferenceError: _ is not defined
 
 let global = 'turtle';
 
-<<<<<<< HEAD
 const jazz = () => {
-  const local = 'jazzy'
-  global = `${global}!`;
-  return `${global} ${local}`;
+	const local = 'jazzy';
+	global = `${global}!`;
+	return `${global} ${local}`;
 };
-=======
+
 function jazz() {
 	const local = 'jazzy';
 	global = `${global}!`;
 	return `${global} ${local}`;
 }
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 const jazzReturn1 = jazz();
 const jazzTest1 = jazzReturn1 === 'turtle! jazzy';
@@ -590,32 +533,26 @@ console.assert(globalTest6, 'Test 9: global');
 
 ## /7-parameter-local-global.js 
 
-> pass 
+> error (syntax) 
 >
 > [review source](../../../exercises/05-functions-101/2-local-param-global/7-parameter-local-global.js)
 
 ```txt
-<<<<<<< HEAD
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/7-parameter-local-global.js:11:32)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
+UNCAUGHT:   ...  /exercises/05-functions-101/2-local-param-global/7-parameter-local-global.js:11
+function funk(parameter) {
+^
+
+SyntaxError: Identifier 'funk' has already been declared
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
-+ PASS: Test 1: global
-+ PASS: Test 2: funk
-+ PASS: Test 3: global
-+ PASS: Test 4: global
-+ PASS: Test 5: funk
-+ PASS: Test 6: global
-+ PASS: Test 7: global
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
+    at Object.<anonymous> (  ...  /scripts/review.js:159:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30) 
 ```
 
 ```js
@@ -623,19 +560,17 @@ UNCAUGHT: ReferenceError: _ is not defined
 
 let global = '.';
 
-<<<<<<< HEAD
 const funk = (parameter) => {
-  const local = `funky ${global}`;
-  global = `${global} ${global}`;
-  return `${parameter} ${local} ${global}`;
+	const local = `funky ${global}`;
+	global = `${global} ${global}`;
+	return `${parameter} ${local} ${global}`;
 };
-=======
+
 function funk(parameter) {
 	const local = `funky ${global}`;
 	global = `${global} ${global}`;
 	return `${parameter} ${local} ${global}`;
 }
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 const globalTest1 = global === '.';
 console.assert(globalTest1, 'Test 1: global');
@@ -679,17 +614,6 @@ console.assert(globalTest5, 'Test 7: global');
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
     at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/8-prameter-local-global.js:11:32)
-<<<<<<< HEAD
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
     at Module._compile (internal/modules/cjs/loader.js:778:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
@@ -697,9 +621,8 @@ UNCAUGHT: ReferenceError: _ is not defined
     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
     at Module.require (internal/modules/cjs/loader.js:692:17)
     at require (internal/modules/cjs/helpers.js:25:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:113:1) 
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:159:1) 
 ```
 
 ```js

@@ -1,19 +1,8 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/23/2020, 9:54:19 AM 
 
-<<<<<<< HEAD
 ## [exercises](../../README.md)/[07-logical-operators](../README.md)/exercises 
-=======
-> 6/19/2020, 12:00:58 AM 
-
-[../README.md](../README.md)
-
-- [/and.js](#andjs) - _fail_ 
-- [/not.js](#notjs) - _fail_ 
-- [/or.js](#orjs) - _fail_ 
-- [/ternary.js](#ternaryjs) - _fail_ 
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 - [/and.js](#andjs) - _incomplete_ 
 - [/not.js](#notjs) - _incomplete_ 
@@ -30,14 +19,14 @@
 UNCAUGHT: ReferenceError: _ is not defined
     at and (  ...  /exercises/07-logical-operators/exercises/and.js:6:3)
     at Object.<anonymous> (  ...  /exercises/07-logical-operators/exercises/and.js:10:19)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
 ```
 
 ```js
@@ -101,14 +90,14 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 UNCAUGHT: ReferenceError: _ is not defined
     at not (  ...  /exercises/07-logical-operators/exercises/not.js:6:3)
     at Object.<anonymous> (  ...  /exercises/07-logical-operators/exercises/not.js:10:19)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
 ```
 
 ```js
@@ -172,14 +161,14 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 UNCAUGHT: ReferenceError: _ is not defined
     at or (  ...  /exercises/07-logical-operators/exercises/or.js:6:3)
     at Object.<anonymous> (  ...  /exercises/07-logical-operators/exercises/or.js:10:19)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
 ```
 
 ```js

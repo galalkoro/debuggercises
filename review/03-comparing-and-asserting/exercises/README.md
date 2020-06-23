@@ -1,21 +1,11 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/23/2020, 9:54:19 AM 
 
-<<<<<<< HEAD
 ## [exercises](../../README.md)/[03-comparing-and-asserting](../README.md)/exercises 
-
-- [/1.js](#1js) - _incomplete_ 
-- [/2.js](#2js) - _incomplete_ 
-=======
-> 6/19/2020, 12:00:58 AM 
-
-[../README.md](../README.md)
 
 - [/1.js](#1js) - _pass_ 
 - [/2.js](#2js) - _pass_ 
-
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 ---
 
 ## /1.js 
@@ -25,19 +15,6 @@
 > [review source](../../../exercises/03-comparing-and-asserting/exercises/1.js)
 
 ```txt
-<<<<<<< HEAD
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/03-comparing-and-asserting/exercises/1.js:5:26)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
 LOG: boolean  true
 + PASS: Assertion 1
 LOG: boolean  true
@@ -46,7 +23,6 @@ LOG: boolean  true
 + PASS: Assertion 3
 LOG: boolean  true
 + PASS: Assertion 4
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 ```
 
 ```js
@@ -83,19 +59,6 @@ console.assert(isTrue4, 'Assertion 4');
 > [review source](../../../exercises/03-comparing-and-asserting/exercises/2.js)
 
 ```txt
-<<<<<<< HEAD
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/03-comparing-and-asserting/exercises/2.js:6:33)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
 + PASS: Assertion 1
 + PASS: Assertion 2
 + PASS: Assertion 3
@@ -103,7 +66,6 @@ UNCAUGHT: ReferenceError: _ is not defined
 + PASS: Assertion 5
 + PASS: Assertion 6
 + PASS: Assertion 7
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 ```
 
 ```js

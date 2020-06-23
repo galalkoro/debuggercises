@@ -1,14 +1,8 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/23/2020, 9:54:19 AM 
 
-<<<<<<< HEAD:review/12-functions-301/README.md
 ## [exercises](../README.md)/12-functions-301 
-=======
-> 6/19/2020, 12:00:58 AM 
-
-[../README.md](../README.md)
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b:review/10-functions-201/README.md
 
 - [/0-examples](./0-examples/README.md)
   - [/1-documenting-functions.js](./0-examples/README.md#1-documenting-functionsjs)  

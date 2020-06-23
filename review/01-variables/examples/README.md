@@ -1,14 +1,8 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/23/2020, 9:54:19 AM 
 
-<<<<<<< HEAD
 ## [exercises](../../README.md)/[01-variables](../README.md)/examples 
-=======
-> 6/19/2020, 12:00:58 AM 
-
-[../README.md](../README.md)
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
 
 - [/1-declaration-assignment-reassignment.js](#1-declaration-assignment-reassignmentjs)  
 - [/2-reusing-variables.js](#2-reusing-variablesjs)  
@@ -104,17 +98,6 @@ console.log(furniture);
 ```txt
 UNCAUGHT: TypeError: Assignment to constant variable.
     at Object.<anonymous> (  ...  /exercises/01-variables/examples/3-const-vs-let.js:19:19)
-<<<<<<< HEAD
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
     at Module._compile (internal/modules/cjs/loader.js:778:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
@@ -122,9 +105,8 @@ UNCAUGHT: TypeError: Assignment to constant variable.
     at Function.Module._load (internal/modules/cjs/loader.js:585:3)
     at Module.require (internal/modules/cjs/loader.js:692:17)
     at require (internal/modules/cjs/helpers.js:25:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:113:1) 
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:159:1) 
 ```
 
 ```js

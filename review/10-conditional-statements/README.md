@@ -1,14 +1,8 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/23/2020, 9:54:19 AM 
 
-<<<<<<< HEAD:review/10-conditional-statements/README.md
 ## [exercises](../README.md)/10-conditional-statements 
-=======
-> 6/19/2020, 12:00:58 AM 
-
-[../README.md](../README.md)
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b:review/09-conditionals/README.md
 
 - [/0-examples](./0-examples/README.md)
   - [/1-if.js](./0-examples/README.md#1-ifjs) - _pass_ 

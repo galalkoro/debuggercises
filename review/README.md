@@ -1,12 +1,6 @@
 # Debuggercises 
 
-<<<<<<< HEAD
-> 6/21/2020, 9:05:10 AM 
-=======
-## /exercises 
-
-> 6/19/2020, 12:00:58 AM 
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b
+> 6/23/2020, 9:54:19 AM 
 
 ## /exercises 
 
@@ -67,21 +61,21 @@
     - [/1-declaration-vs-execution.js](./05-functions-101/0-examples/README.md#1-declaration-vs-executionjs)  
     - [/2-parameters-and-arguments.js](./05-functions-101/0-examples/README.md#2-parameters-and-argumentsjs)  
     - [/3-return-values.js](./05-functions-101/0-examples/README.md#3-return-valuesjs) - _pass_ 
-    - [/4-tracing-execution.js](./05-functions-101/0-examples/README.md#4-tracing-executionjs) - _pass_ 
+    - [/4-tracing-execution.js](./05-functions-101/0-examples/README.md#4-tracing-executionjs) - _error (syntax)_ 
     - [/5-scope.js](./05-functions-101/0-examples/README.md#5-scopejs)  
     - [/6-test-cases.js](./05-functions-101/0-examples/README.md#6-test-casesjs) - _pass_ 
   - [/1-scrambles](./05-functions-101/1-scrambles/README.md)
-    - [/1-write-expected.js](./05-functions-101/1-scrambles/README.md#1-write-expectedjs) - _pass_ 
-    - [/2-write-arguments.js](./05-functions-101/1-scrambles/README.md#2-write-argumentsjs) - _pass_ 
-    - [/3-write-function.js](./05-functions-101/1-scrambles/README.md#3-write-functionjs) - _pass_ 
+    - [/1-write-expected.js](./05-functions-101/1-scrambles/README.md#1-write-expectedjs) - _error (syntax)_ 
+    - [/2-write-arguments.js](./05-functions-101/1-scrambles/README.md#2-write-argumentsjs) - _error (syntax)_ 
+    - [/3-write-function.js](./05-functions-101/1-scrambles/README.md#3-write-functionjs) - _error (syntax)_ 
   - [/2-local-param-global](./05-functions-101/2-local-param-global/README.md)
-    - [/0-example.js](./05-functions-101/2-local-param-global/README.md#0-examplejs)  
-    - [/1-parameter-local.js](./05-functions-101/2-local-param-global/README.md#1-parameter-localjs) - _pass_ 
-    - [/2-parameter-global.js](./05-functions-101/2-local-param-global/README.md#2-parameter-globaljs) - _pass_ 
-    - [/3-parameter-global.js](./05-functions-101/2-local-param-global/README.md#3-parameter-globaljs) - _pass_ 
-    - [/5-local-global.js](./05-functions-101/2-local-param-global/README.md#5-local-globaljs) - _pass_ 
-    - [/6-local-global.js](./05-functions-101/2-local-param-global/README.md#6-local-globaljs) - _pass_ 
-    - [/7-parameter-local-global.js](./05-functions-101/2-local-param-global/README.md#7-parameter-local-globaljs) - _pass_ 
+    - [/0-example.js](./05-functions-101/2-local-param-global/README.md#0-examplejs) - _error (syntax)_ 
+    - [/1-parameter-local.js](./05-functions-101/2-local-param-global/README.md#1-parameter-localjs) - _error (syntax)_ 
+    - [/2-parameter-global.js](./05-functions-101/2-local-param-global/README.md#2-parameter-globaljs) - _error (syntax)_ 
+    - [/3-parameter-global.js](./05-functions-101/2-local-param-global/README.md#3-parameter-globaljs) - _error (syntax)_ 
+    - [/5-local-global.js](./05-functions-101/2-local-param-global/README.md#5-local-globaljs) - _error (syntax)_ 
+    - [/6-local-global.js](./05-functions-101/2-local-param-global/README.md#6-local-globaljs) - _error (syntax)_ 
+    - [/7-parameter-local-global.js](./05-functions-101/2-local-param-global/README.md#7-parameter-local-globaljs) - _error (syntax)_ 
     - [/8-prameter-local-global.js](./05-functions-101/2-local-param-global/README.md#8-prameter-local-globaljs) - _incomplete_ 
     - [/extra-pure-functions.js](./05-functions-101/2-local-param-global/README.md#extra-pure-functionsjs)  
 - [/06-explicit-coercion](./06-explicit-coercion/README.md)
