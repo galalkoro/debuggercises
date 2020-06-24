@@ -77,12 +77,12 @@ UNCAUGHT: ReferenceError: _ is not defined
     at Module.require (internal/modules/cjs/loader.js:692:17)
     at require (internal/modules/cjs/helpers.js:25:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-:exercises/09-block-scope/4-declare-and-assign/README.md
+exercises/09-block-scope/4-declare-and-assign/README.md
     at Object.<anonymous> (  ...  /scripts/review.js:116:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30) 
 
     at Object.<anonymous> (  ...  /scripts/review.js:113:1) 
-:review/08-block-scope/4-declare-and-assign/README.md
+review/08-block-scope/4-declare-and-assign/README.md
 ```
 
 ```js

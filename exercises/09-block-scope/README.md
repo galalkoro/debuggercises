@@ -1,11 +1,11 @@
-:exercises/09-block-scope/README.md
+exercises/09-block-scope/README.md
 # Debuggercises 
 
 # undefined 
 
 > 6/19/2020, 12:47:28 AM 
 
-:review/08-block-scope/README.md
+review/08-block-scope/README.md
 
 ## [exercises](../README.md)/08-block-scope 
 

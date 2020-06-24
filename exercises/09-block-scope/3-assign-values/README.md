@@ -1,6 +1,6 @@
 # Debuggercises 
 
-:exercises/09-block-scope/3-assign-values/README.md
+exercises/09-block-scope/3-assign-values/README.md
 ## [exercises](../README.md)/[08-block-scope](../../README.md)/3-assign-values 
 
 > 6/19/2020, 12:47:28 AM 

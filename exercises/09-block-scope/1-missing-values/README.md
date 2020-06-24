@@ -8,7 +8,7 @@
 > 6/19/2020, 12:00:58 AM 
 
 [../README.md](../README.md)
-:review/08-block-scope/1-missing-values/README.md
+review/08-block-scope/1-missing-values/README.md
 
 - [/1.js](#1js) - _incomplete_ 
 - [/2.js](#2js) - _incomplete_ 
