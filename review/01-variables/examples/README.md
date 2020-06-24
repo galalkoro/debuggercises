@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/24/2020, 12:09:52 AM 
+> 6/24/2020, 11:58:53 AM 
 
 ## [exercises](../../README.md)/[01-variables](../README.md)/examples 
 
@@ -97,7 +97,7 @@ console.log(furniture);
 
 ```txt
 UNCAUGHT: TypeError: Assignment to constant variable.
-    at Object.<anonymous> (  ...  /exercises/01-variables/examples/3-const-vs-let.js:19:19)
+    at Object.<anonymous> (  ...  /exercises/01-variables/examples/3-const-vs-let.js:18:19)
     at Module._compile (internal/modules/cjs/loader.js:778:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
@@ -114,7 +114,6 @@ UNCAUGHT: TypeError: Assignment to constant variable.
 
 // const is short for "constant".  a variable that never changes
 
-
 // const variables cannot be declared without assigning a value
 // this will throw an error
 //  "Missing initializer in const declaration"
@@ -130,7 +129,6 @@ UNCAUGHT: TypeError: Assignment to constant variable.
 const constantVariable2 = 'constant value';
 constantVariable2 = 'new value';
 console.log(constantVariable2);
-
 
 // all of these things are possible with let
 
