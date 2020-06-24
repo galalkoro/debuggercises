@@ -2,13 +2,13 @@
 
 ## [exercises](../README.md)/[08-block-scope](../../README.md)/1-missing-values 
 
-<<<<<<< HEAD:exercises/09-block-scope/1-missing-values/README.md
+:exercises/09-block-scope/1-missing-values/README.md
 > 6/17/2020, 2:58:31 PM 
-=======
+
 > 6/19/2020, 12:00:58 AM 
 
 [../README.md](../README.md)
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b:review/08-block-scope/1-missing-values/README.md
+:review/08-block-scope/1-missing-values/README.md
 
 - [/1.js](#1js) - _incomplete_ 
 - [/2.js](#2js) - _incomplete_ 
@@ -32,12 +32,12 @@ UNCAUGHT: ReferenceError: _ is not defined
     at Module.require (internal/modules/cjs/loader.js:692:17)
     at require (internal/modules/cjs/helpers.js:25:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-<<<<<<< HEAD:exercises/09-block-scope/1-missing-values/README.md
+:exercises/09-block-scope/1-missing-values/README.md
     at Object.<anonymous> (  ...  /scripts/review.js:116:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
+
     at Object.<anonymous> (  ...  /scripts/review.js:113:1) 
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b:review/08-block-scope/1-missing-values/README.md
+:review/08-block-scope/1-missing-values/README.md
 ```
 
 ```js
@@ -74,12 +74,12 @@ UNCAUGHT: ReferenceError: _ is not defined
     at Module.require (internal/modules/cjs/loader.js:692:17)
     at require (internal/modules/cjs/helpers.js:25:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-<<<<<<< HEAD:exercises/09-block-scope/1-missing-values/README.md
+:exercises/09-block-scope/1-missing-values/README.md
     at Object.<anonymous> (  ...  /scripts/review.js:116:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
+
     at Object.<anonymous> (  ...  /scripts/review.js:113:1) 
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b:review/08-block-scope/1-missing-values/README.md
+:review/08-block-scope/1-missing-values/README.md
 ```
 
 ```js
@@ -119,12 +119,12 @@ UNCAUGHT: ReferenceError: _ is not defined
     at Module.require (internal/modules/cjs/loader.js:692:17)
     at require (internal/modules/cjs/helpers.js:25:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-<<<<<<< HEAD:exercises/09-block-scope/1-missing-values/README.md
+<:exercises/09-block-scope/1-missing-values/README.md
     at Object.<anonymous> (  ...  /scripts/review.js:116:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
+
     at Object.<anonymous> (  ...  /scripts/review.js:113:1) 
->>>>>>> da31acffc079dde44edf60eda7b6176a9e5fc09b:review/08-block-scope/1-missing-values/README.md
+b:review/08-block-scope/1-missing-values/README.md
 ```
 
 ```js
