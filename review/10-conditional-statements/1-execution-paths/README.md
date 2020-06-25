@@ -1,11 +1,11 @@
 # Debuggercises 
 
-> 6/25/2020, 3:57:46 PM 
+> 6/25/2020, 5:16:08 PM 
 
 ## [exercises](../../README.md)/[10-conditional-statements](../README.md)/1-execution-paths 
 
 - [/1-write-expected.js](#1-write-expectedjs) - _pass_ 
-- [/2-write-arguments.js](#2-write-argumentsjs) - _fail_ 
+- [/2-write-arguments.js](#2-write-argumentsjs) - _pass_ 
 - [/3-write-arguments.js](#3-write-argumentsjs) - _pass_ 
 - [/4-write-function.js](#4-write-functionjs) - _pass_ 
 - [/5-write-function.js](#5-write-functionjs) - _pass_ 
@@ -86,7 +86,7 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /2-write-arguments.js 
 
-> fail 
+> pass 
 >
 > [review source](../../../exercises/10-conditional-statements/1-execution-paths/2-write-arguments.js)
 
@@ -95,7 +95,7 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 + PASS: Test 2
 + PASS: Test 3
 + PASS: Test 4
-- FAIL: Test 5
++ PASS: Test 5
 + PASS: Test 6
 + PASS: Test 7
 + PASS: Test 8
@@ -125,7 +125,7 @@ const _2_actual = mystery(null, 'object');
 console.assert(_2_actual === _2_expect, 'Test 2');
 
 const _3_expect = 'path 1';
-const _3_actual = mystery('', 'string');
+const _3_actual = mystery(undefined, 'undefined');
 console.assert(_3_actual === _3_expect, 'Test 3');
 
 // path 2
@@ -134,11 +134,11 @@ const _4_actual = mystery('number', NaN);
 console.assert(_4_actual === _4_expect, 'Test 4');
 
 const _5_expect = 'path 2';
-const _5_actual = mystery(null, 'object');
+const _5_actual = mystery('object', null);
 console.assert(_5_actual === _5_expect, 'Test 5');
 
 const _6_expect = 'path 2';
-const _6_actual = mystery('string', '');
+const _6_actual = mystery('undefined', undefined);
 console.assert(_6_actual === _6_expect, 'Test 6');
 
 // path 3

@@ -20,7 +20,7 @@ const _2_actual = mystery(null, 'object');
 console.assert(_2_actual === _2_expect, 'Test 2');
 
 const _3_expect = 'path 1';
-const _3_actual = mystery('', 'string');
+const _3_actual = mystery(undefined, 'undefined');
 console.assert(_3_actual === _3_expect, 'Test 3');
 
 // path 2
@@ -29,11 +29,11 @@ const _4_actual = mystery('number', NaN);
 console.assert(_4_actual === _4_expect, 'Test 4');
 
 const _5_expect = 'path 2';
-const _5_actual = mystery(null, 'object');
+const _5_actual = mystery('object', null);
 console.assert(_5_actual === _5_expect, 'Test 5');
 
 const _6_expect = 'path 2';
-const _6_actual = mystery('string', '');
+const _6_actual = mystery('undefined', undefined);
 console.assert(_6_actual === _6_expect, 'Test 6');
 
 // path 3
