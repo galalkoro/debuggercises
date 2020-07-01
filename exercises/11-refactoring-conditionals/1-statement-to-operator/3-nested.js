@@ -1,8 +1,8 @@
 'use strict';
 
 const conditional = (a, b) => {
-  let result;
-  if (typeof a === 'number') {
+	let result;
+	/*if (typeof a === 'number') {
     if (typeof b === 'number') {
       result = a + b;
     } else {
@@ -14,8 +14,14 @@ const conditional = (a, b) => {
     } else {
       result = a;
     }
-  }
-  return result;
+  }*/
+	let galal = typeof a;
+	let ali = typeof b;
+	let ahmed = 'number';
+	let koro = 'string';
+
+	result = galal === ahmed ? (ali === ahmed ? a + b : b) : ali === koro ? b + a : a;
+	return result;
 };
 
 // path 1

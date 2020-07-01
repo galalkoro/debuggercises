@@ -2,10 +2,16 @@
 
 // refactor this function ot use if/else statements
 const conditional = (a, b) => {
-  const result = typeof a === 'boolean'
-    ? !a
-    : b;
-  return result;
+	/*	const result = typeof a === 'boolean';
+	? !a
+    : b;*/
+	let result;
+	if (typeof a === 'boolean') {
+		result = !a;
+	} else {
+		result = b;
+	}
+	return result;
 };
 
 // path 1
